@@ -10,7 +10,7 @@ body {
 .layout {
     display: grid;
     grid-template-columns: 1fr 95% 1fr;
-    grid-template-rows: 70px 400px 40px auto 40px 100px;
+    grid-template-rows: 70px 300px 40px auto 40px 100px;
 }
 
 .content {
@@ -75,13 +75,15 @@ body {
 }
 
 
-
 .content__box {
     background-color: #F6F6F6;
     padding: 20px;
     border-radius: 5px;
 }
 
+.content__title {
+    margin: 0;
+}
 .button {
     border-radius: 20px;
     padding: 10px 15px;
