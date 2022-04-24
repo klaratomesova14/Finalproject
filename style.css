@@ -9,10 +9,8 @@ body {
 
 .layout {
     display: grid;
-    grid-template-columns: 1fr 90% 1fr;
+    grid-template-columns: 1fr 95% 1fr;
     grid-template-rows: 70px 400px 40px auto 40px 100px;
-    
-
 }
 
 .content {
