@@ -14,7 +14,7 @@ body {
 .layout {
     display: grid;
     grid-template-columns: 1fr 95% 1fr;
-    grid-template-rows: 60px 250px 20px auto 20px 100px;
+    grid-template-rows: 60px 250px 20px auto 20px auto;
 }
 
 .content {
@@ -41,6 +41,39 @@ body {
     grid-column: 1 / -1;
 }
 
+.footer {
+    grid-row: 6 / 7;
+    grid-column: 1 / -1;
+    border-top: 2px solid #F6F6F6;
+    padding: 10px;
+
+}
+.footer__content {
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company__title {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.company__image {
+    width: 50px;
+    height: 50px;
+
+}
+
+.e-mail {
+    text-decoration: none;
+    color: rgb(6, 5, 5);
+    font-size: 16px;
+}
+
 .logo {
      position: relative;
 }
@@ -60,8 +93,6 @@ body {
        bottom: -15px
        
 }
-
-
 
 .hero__photo {
     width: 100%;
@@ -95,8 +126,11 @@ body {
 }
 
 .quote {
-    font-size: 26px;
+    font-size: 24px;
     font-family: 'Square Peg', cursive;
+    display: block;
+    text-align: center;
+    margin: 10px;
 }
 
 .content__image {
@@ -107,14 +141,12 @@ body {
 .content__subtitle {
     font-size: 22px;
     margin: 0;
-    font-size: ;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .content__subtitle--attention {
     color: rgb(177, 21, 21);
 }
-
 
 .button {
     border-radius: 25px;
@@ -122,7 +154,7 @@ body {
     background-color: var(--c-primary);
     border: 1px solid var(--c-primary);
     font-family: 'Mukta', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     color: rgb(6, 5, 5);
     font-size: 15px;
 }
@@ -160,6 +192,8 @@ body {
 .card__image {
     border-radius: 5px 5px 0 0;
     width: 100%;
+    height: 250px;
+    object-fit: cover;
     
 }
 
@@ -170,7 +204,7 @@ body {
 }
 .card__title {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 10px 0;
 }
 
@@ -201,7 +235,7 @@ body {
     .layout {
         display: grid;
         grid-template-columns: 1fr 75% 1fr;
-        grid-template-rows: 70px 400px 60px auto 60px 100px;
+        grid-template-rows: 70px 400px 60px auto 60px auto;
     }
 
     .content {
@@ -227,6 +261,7 @@ body {
         grid-row: 2 / 3;
         grid-column: 1 / -1;
     }
+
     
     .content__box {
         padding: 45px 50px;
@@ -267,7 +302,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        grid-gap: 0 5px;
+        grid-gap: 0 10px;
     }
 
     .card__description {
@@ -285,10 +320,25 @@ body {
         font-size: 20px;
     }
 
-    .quote {
-        text-align: center;
-        font-size: 32px;
-        margin: 0;
+    .card__image {
+        height: 150px;
     }
 
+    .quote {
+        font-size: 38px;
+        margin: 20px;
+    }
+    .footer__content {
+        width: 25%;
+    }
+
+    .button {
+        padding: 2px 5px;
+    }
+
+    .button:hover {
+        transform: scale(1.1);
+    }
+
+ 
 }
