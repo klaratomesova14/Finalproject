@@ -8,7 +8,9 @@ body {
     margin: 0;
     font-family: 'Mukta', sans-serif;
     font-weight: 200;
+    letter-spacing: 1.1px;
     color: rgb(6, 5, 5);
+    background-color: #F6F6F6;
 }
 
 .layout {
@@ -28,11 +30,13 @@ body {
 
 
 .header {
+    background-color: white;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     display: flex;
     justify-content: space-between; 
     align-items: flex-end;
+
     
 }
 
@@ -50,7 +54,7 @@ body {
 }
 .footer__content {
     display: flex;
-    width: 80%;
+    width: 320px;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
@@ -71,15 +75,15 @@ body {
 .e-mail {
     text-decoration: none;
     color: rgb(6, 5, 5);
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .logo {
      position: relative;
 }
 .logo__title {
-    font-size: 26px;
-    font-weight: 300;
+    font-size: 28px;
+    font-weight: 200;
     line-height: 1.2;
     margin: 0 0 0 80px;
 
@@ -108,7 +112,8 @@ body {
 
 
 .content__box {
-    background-color: #F6F6F6;
+    background-color: white;
+    border: 1px solid #e7e6e6;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
@@ -117,6 +122,9 @@ body {
 .content__title {
     margin: 0;
     font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 20px;
 }
 
 .content__text {
@@ -158,7 +166,9 @@ body {
     font-family: 'Mukta', sans-serif;
     font-weight: 300;
     color: rgb(6, 5, 5);
-    font-size: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+    text-transform: uppercase;
 }
 
 .link {
@@ -220,7 +230,7 @@ body {
 }
 
 .logo__title--small {
-    font-size: 18px;
+    font-size: 14px;
     display: inline-block;
     margin: 0 10px 0 0;
 }
@@ -296,19 +306,30 @@ body {
 
     .tabs {
         display: block;
-        font-size: 26px;
+        font-size: 18px;
+        line-height: 1.2;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        font-weight: 200;
+        
         
 
     }
 
     .tab__item {
         text-decoration: none;
-        line-height: 1.2;
         color: black;
-        padding: 0 15px;
+        margin: 0 15px;
         
     }
 
+    .tab__item:hover, .tab__item:active {
+        color: #b58715;
+    }
+
+    .tab__item--last {
+        margin-right: 0;
+    }
     .menu-icon {
         display: none;
     }
@@ -348,7 +369,7 @@ body {
         margin: 20px;
     }
     .footer__content {
-        width: 25%;
+        width: 350px;
     }
 
    
