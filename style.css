@@ -34,6 +34,7 @@ body {
     display: flex;
     justify-content: space-between; 
     align-items: flex-end;
+    border-bottom: 2px solid white;
 
     
 }
@@ -120,6 +121,9 @@ body {
     text-align: center;
 }
 
+.content__text--centered {
+    text-align: center;
+}
 
 
 .content__header {
@@ -137,9 +141,10 @@ body {
 }
 
 .content__title--big {
-    font-size: 28px;
-    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 1.2px;
 }  
+
 
 .content__text {
     font-size: 18px;
@@ -177,21 +182,23 @@ body {
 }
 
 
-/*
+
 .button {
     border-radius: 25px;
     padding: 10px 15px;
     background-color: var(--c-primary);
     border: 1px solid var(--c-primary);
-    font-family: 'Mukta', sans-serif;
     font-weight: 300;
     color: rgb(6, 5, 5);
     font-size: 14px;
-    margin-top: 20px;
-    text-transform: uppercase;
+    margin-top: 20px
 }
 
-*/
+.button--centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 .link {
@@ -288,7 +295,7 @@ body {
     .layout {
         display: grid;
         grid-template-columns: 1fr 1120px 1fr;
-        grid-template-rows: 55px 400px 65px auto 60px auto;
+        grid-template-rows: 55px auto 65px auto 60px auto;
     }
 
     .content {
@@ -315,6 +322,9 @@ body {
         grid-column: 1 / -1;
     }
 
+    .hero__photo {
+        height: 380px;
+    }
     
     .content__box {
         padding: 40px 20px 40px 30px;
@@ -330,7 +340,7 @@ body {
     }
 
     .content__image {
-        height: 400px;
+        min-height: 400px;
     }
 
     .tabs {
@@ -409,6 +419,7 @@ body {
     }
 
     .gallery__grid {
+        grid-column: 1 / -1;
         display: grid;
         grid-auto-rows: auto;
         gap: 40px;
@@ -464,6 +475,37 @@ body {
        line-height: 34px;
    }
 
+   .table {
+       width: 90%;
+       font-weight: 200;
+       margin-top: 10%;
+       border: none;
+       
+   }
+
+   .table__row--odd {
+       background-color: #F6F6F6;
+   }
+
+   .table__row--even {
+        background-color: #f6f6f669;
+}
+
+   .table__data {
+        padding: 10px;
+   }
+
+   .table__data--left {
+       text-align: left;
+   }
+
+   .table__data--right {
+       text-align: right;
+   }
+
+   .table__data--attention {
+        color: rgb(177, 21, 21);
+   }
  
 
     /*.button:hover {
