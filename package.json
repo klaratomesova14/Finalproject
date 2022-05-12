@@ -1,0 +1,23 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fslightbox.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klaratomesova14/Finalproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klaratomesova14/Finalproject/issues"
+  },
+  "homepage": "https://github.com/klaratomesova14/Finalproject#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}

@@ -1,46 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Ráj poníků</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-     <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
-     
-    </head>
-<body>
-        
-    <div class="layout">
+---
+layout: sablona.njk
+title: Ráj poníků
+---
 
-        <header class="header">
-            <div class="logo">
-                <img class="logo__image" src="images/logoyellow2.png" alt="Logo Ráje poníků">
-                <h1 class="logo__title">Ráj poníků</h1>
-            </div>
-
-            <nav class="tabs">
-                <a class="tab__item" href="primestsky-tabor.html">Nabízíme</a>
-                <a class="tab__item" href="nasi-ponici.html">Naši poníci</a>
-                <a class="tab__item" href="fotogalerie.html">Fotogalerie</a>
-                <a class="tab__item" href="cenik.html">Ceník</a>
-                <a class="tab__item tab__item--last" href="kontakt.html">Kontakt</a>
-
-            </nav>
-            <i class="menu-icon">menu</i>
-        </header>
-
-        <div class= "hero">
-                <img class="hero__photo" src="images/hero.jpg" alt="Holčička s poníky">
-        </div>
-
-        
-
-        <div class="content">
                 <div class="content__box content__box--narrow">
                     <h2 class="content__title">Vítejte v Ráji poníků</h2>
                     <p class="content__text">Jsme rodinka, která si vzala do opatrování pět poníků a staráme se, aby jim u nás nic nechybělo.</p>
@@ -83,56 +45,47 @@
                     <p class="content__text">Vašim dětem nabízíme zábavné a smysluplné vyžití na každou část roku i každou část dne.</p>
                 
                     <div class="cards">
-                        <div class="card">
-                            <img class="card__image" src="images/rides-small.jpg" alt="Projžďka na poníkovi">
-                            <div class="card__text">
-                                <h4 class="card__title">Projížďky</h4>
-                                <p class="card__description">Krátké projížďky u nás v areálu i 30-minutové individuální vyjížďky po blízkém okolí.</p>
+                        <a class="card__link" href="projizdky.html">
+                            <div class="card"> 
+                                <img class="card__image" src="images/rides-small.jpg" alt="Projžďka na poníkovi">
+                                <div class="card__text">
+                                    <h4 class="card__title">Projížďky</h4>
+                                    <p class="card__description">Krátké projížďky u nás v areálu i 30-minutové individuální vyjížďky po blízkém okolí.</p>
+                                </div>
                             </div>
-                        </div>
+                                                            </a>
+                        
 
-                        <div class="card">
-                            <img class="card__image" src="images/ponyclub-small.jpg" alt="Malá jezdkyně s poníkem">
-                            <div class="card__text">
-                                <h4 class="card__title">Ponyclub</h4>
-                                <p class="card__description">Jezdecký klub zahrnující péči o poníky, gymnastiku a drezůru. Odpolední kroužek. </p>
+                        <a class="card__link" href="ponyclub.html">
+                            <div class="card">
+                                <img class="card__image" src="images/ponyclub-small.jpg" alt="Malá jezdkyně s poníkem">
+                                <div class="card__text">
+                                    <h4 class="card__title">Ponyclub</h4>
+                                    <p class="card__description">Odpolední kroužek kombinující ježdění, péči o poníky, gymnastiku a drezůru.</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="card">
-                            <img class="card__image" src="images/program-small.jpg" alt="Děti krmí poníka">
-                            <div class="card__text">
-                                <h4 class="card__title">Program pro školy<br>
-                                    & oslavy</h4>
-                                <p class="card__description">Přijedeme povozit děti do škol, na narozeninové oslavy a jiné akce.</p>
+                        <a class="card__link" href="program.html">
+                            <div class="card">
+                                <img class="card__image" src="images/program-small.jpg" alt="Děti krmí poníka">
+                                <div class="card__text">
+                                    <h4 class="card__title">Program pro školy<br>
+                                        & oslavy</h4>
+                                    <p class="card__description">Přijedeme povozit děti do škol, na narozeninové oslavy a jiné akce.</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="card">
-                            <img class="card__image" src="images/camp-small.jpg" alt="Dívka s poníkem na louce">
-                            <div class="card__text">
-                                <h4 class="card__title">Příměstský tábor</h4>
-                                <p class="card__description">5-denní celodenní program v období letních prázdnin. Možnost přespání.</p>
+                        <a class="card__link" href="primestsky-tabor.html">
+                            <div class="card">
+                                <img class="card__image" src="images/camp-small.jpg" alt="Dívka s poníkem na louce">
+                                <div class="card__text">
+                                    <h4 class="card__title">Příměstský tábor</h4>
+                                    <p class="card__description">5-denní celodenní program v období letních prázdnin. Možnost přespání.</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    
                 </div>
-            
-        </div>    
-
         
-
-        <footer class="footer">
-                <p class="footer__title handwriting">„Naším přáním je přinášet radost dětem i koním.“</p>  
-                <div class="footer__content">
-                    <h1 class="company__title">©Ráj poníků, 2022</h1>
-                    <img class="company__image" src="images/logoyellow2.png" alt="Logo Ráje poníků">
-                    <a class="e-mail" href="mailto:rajponiku@seznam.cz">rajponiku@seznam.cz</a>
-                </div>
-        </footer>
-    </div>
-
-<script src="fslightbox.js"></script>
-</body>
-</html>
