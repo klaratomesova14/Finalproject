@@ -6,58 +6,72 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>Ráj poníků</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
      <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
-</head>
+     
+    </head>
 <body>
-    
-<div class="layout">
+        
+    <div class="layout">
 
-<header class="header">
-    <div class="logo">
-        <img class="logo__image" src="/images/logoyellow2.png" alt="Logo Ráje poníků">
-        <h1 class="logo__title">Ráj poníků</h1>
-    </div>
+        <header class="header">
+            <a class="logo__link" href="/">
+                <div class="logo">
+                    <img class="logo__image" src="/images/logoyellow2.png" alt="Logo Ráje poníků">
+                    <h1 class="logo__title">Ráj poníků</h1>
+                </div>
+            </a>
 
-    <nav class="tabs">
-        <a class="tab__item" href="#">Nabízíme</a>
-        <a class="tab__item" href="#">Naši poníci</a>
-        <a class="tab__item" href="#">Fotogalerie</a>
-        <a class="tab__item" href="#">Ceník</a>
-        <a class="tab__item tab__item--last" href="#">Kontakt</a>
+            <nav class="tabs">
+                <a class="tab__item" href="/primestsky-tabor/">Nabízíme</a>
+                <a class="tab__item" href="/nasi-ponici/">Naši poníci</a>
+                <a class="tab__item" href="/fotogalerie/">Fotogalerie</a>
+                <a class="tab__item" href="/cenik/">Ceník</a>
+                <a class="tab__item tab__item--last" href="/kontakt/">Kontakt</a>
 
-    </nav>
-    <i class="menu-icon">menu</i>
-</header>
-   
+            </nav>
+            <i class="menu-icon">menu</i>
+        </header>
+
+        <div class= "hero">
+                <img class="hero__photo" src="/images/hero.jpg" alt="Holčička s poníky">
+        </div>
+
+
 <div class="content">
-    <div class="content__header">
-        <h1 class="content__title content__title--big">Program pro školy & oslavy</h1></div>
+
+
+<div class="content__header">
+
+    
+    <h1 class="content__title content__title--big">Program pro školky & oslavy</h1></div>
     <div class="content__box content__box--narrow">
-        <h3 class="content__subtitle">Program pro mateřské a základní školy</h3>
-        <p class="content__text">Příměstské tábory pořádáme na území Prahy 9 - Hloubětín.</p>
-        <p class="content__text">Tábor je koncipován pro 5 - 15 dětí ve věku od 6 do přibližně 15 let (max. váha dítěte je 50kg).</p>
-        <p class="content__text">Časový rozvrh je od 8.30 do 16.30 hod.</p>
-        <p class="content__text">Stravování je zajištěno 3x denně (2 svačiny a oběd v nedaleké restauraci), pitný režim celodenně.</p>
-        <p class="content__text">Možnost přespání v chatičce (za příplatek). Večeře a snídáně zajištěna, potřeba donést spací pytel.</p>
+        <h3 class="content__subtitle">Program pro mateřské školy</h3>
+        <p class="content__text">Do mateřských škol jezdíme na dopolední venkovní program.</p>
+        <p class="content__text">Jezdíme kolem areálu školky, aby si ostatní děti mohly hrát na zahradě.</p>
+        <p class="content__text">Trasa je dlouhá zhruba 300 m nebo 5 minut jízdy, záleží na terénu.</p>
+        <p class="content__text">Za dopoledne jsme schopni povozit přibližně sto dětí - pokud je dětí více, je lepší jízdy rozdělit na více dní.</p>
+        <p class="content__text">Vozíme po celý rok a za každého počasí, je možné domluvit pravidelný program.</p>
     </div>
 
     <div class="content__image"><img src="/images/program.jpg" alt="Dívka na poníkovi s vodičem">
     </div>
 
+    <div class="content__image"><img src="/images/party-other.jpeg" alt="Dětský den s poníky">
+    </div>
+
     <div class="content__box content__box--narrow">
         <h3 class="content__subtitle">Oslavy a akce</h3>
-        <p class="content__text">Dopoledne většinou trávíme na jízdárně, odpoledne využíváme i fitness louku a stezku u řeky Rokytky.</p>
-        <p class="content__text">Zhruba uprostřed týdne (v závislosti na počasí) vyrazíme na celodenní výlet.</p>
-        <p class="content__text">Užijeme si spolu spostu her a soutěží.</p>
-        <p class="content__text">Na závěr tábora si rozdáme diplomy a dárečky na památku.</p>
+        <p class="content__text">Přijedeme s vámi oslavit narozeniny či zpestřit veřejné i jiné soukromé akce.</p>
+        <p class="content__text">Pro tyto účely je nutné poníky objednat alespoň 14 dní dopředu.</p>
+        <p class="content__text">Cena je individuální - odvíjí se od typu a délky akce a také od počtu dovezených poníků.</p>
+       
     </div>
 
-    <div class="content__image"><img src="/images/ride.jpg" alt="Dívka na poníkovi s vodičem">
-    </div>
+ 
 
 
 
@@ -65,17 +79,21 @@
 
 </div>
 
-<footer class="footer">
-        <p class="quote">„Naším přáním je přinášet radost dětem i koním.“</p>  
-        <div class="footer__content">
-            <h1 class="company__title">©Ráj poníků, 2022</h1>
-            <img class="company__image" src="images/logoyellow2.png" alt="Logo Ráje poníků">
-            <a class="e-mail" href="mailto:rajponiku@seznam.cz">rajponiku@seznam.cz</a>
-        </div>
 
-</footer>
 
-</div>
+ </div>    
 
+
+        <footer class="footer">
+                <p class="footer__title handwriting">„Naším přáním je přinášet radost dětem i koním.“</p>  
+                <div class="footer__content">
+                    <h1 class="company__title">©Ráj poníků, 2022</h1>
+                    <img class="company__image" src="/images/logoyellow2.png" alt="Logo Ráje poníků">
+                    <a class="e-mail" href="mailto:rajponiku@seznam.cz">rajponiku@seznam.cz</a>
+                </div>
+        </footer>
+    </div>
+
+<script src="/javascript/fslightbox.js"></script>
 </body>
 </html>
