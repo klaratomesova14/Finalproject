@@ -56,6 +56,7 @@ body {
 .footer__title {
     text-align: center;
     margin: 0 auto;
+    padding-left: 25px;
     font-size: 20px;
     font-weight: 200;
 }
@@ -136,7 +137,11 @@ body {
     display: none;
 }
 
+.content__wrapper  {
+    display: flex;
+    flex-direction: column-reverse;
 
+}
 .content__box {
     background-color: #F6F6F6;
     border: 1px solid #e7e6e6;
@@ -188,6 +193,7 @@ body {
     max-height: 450px;
     object-fit: cover;
     border-radius: 5px;
+    border: 1px solid #e7e6e6;
 }
 
 .content__subtitle {
@@ -481,7 +487,7 @@ body {
     .layout {
         display: grid;
         grid-template-columns: 1fr 1150px 1fr;
-        grid-template-rows: 55px auto 55px auto 100px auto;
+        grid-template-rows: 55px auto 40px auto 100px auto;
     }
 
     .content {
@@ -509,7 +515,7 @@ body {
     }
 
     .hero__photo {
-        height: 380px;
+        height: 350px;
     }
     
     .content__box {
@@ -519,6 +525,11 @@ body {
 
     .content__box--wide {
         grid-column: 1 / -1;
+    }
+
+    .content__wrapper  {
+        display: contents;
+    
     }
 
     .content__header {
@@ -534,6 +545,18 @@ body {
 
     .content__subtitle--centered {
         text-align: center;
+    }
+
+    .content__subtitle--bigger {
+        font-size: 30px;
+        margin: 50px 0 20px 0;
+
+    }
+
+    .content__text--bigger {
+        font-size: 22px;
+        line-height: 1.5;
+        margin-bottom: 80px;
     }
 
     .logo__link:hover {
@@ -619,13 +642,27 @@ body {
     }
 
     .footer {
-        padding: 20px 0;
-
+        padding: 20px 5px;
     }
 
-    .footer__content {
-        width: 400px;
+    .footer__title {
+        font-size: 24px;
     }
+           
+    .footer__subtitle {
+        font-size: 16px;
+    }
+    
+    .footer__image {
+        width: 45px;
+        height: 45px;
+        margin: 0 15px;
+    }
+    
+    .footer__link {
+        font-size: 16px;
+    }
+    
 
     .gallery {
         width: 1120px;
@@ -635,9 +672,7 @@ body {
         grid-column: 1 / -1;
         display: grid;
         grid-auto-rows: auto;
-        gap: 25px;
-        background-color: #F6F6F6;
-        
+        gap: 25px;        
     }
    .gallery__grid--two{
        display: grid;
