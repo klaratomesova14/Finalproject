@@ -262,6 +262,11 @@ body {
   color: rgb(6, 5, 5);
 }
 
+.link__tel {
+  color: inherit;
+  text-decoration: none;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr;
