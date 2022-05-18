@@ -315,6 +315,11 @@ body {
   margin: 30px 0 10px 0;
 }
 
+.tel {
+  text-decoration: none;
+  color: #424141;
+}
+
 .list {
   list-style: none;
   font-size: 18px;
