@@ -38,7 +38,7 @@ body {
 .footer {
   grid-row: 6/7;
   grid-column: 1/-1;
-  padding: 15px 5px;
+  padding: 30px 5px;
   border-top: 2px solid #F6F6F6;
   background-color: #F6F6F6;
   letter-spacing: 1.5px;
@@ -180,8 +180,8 @@ body {
 
 .content__image img {
   width: 100%;
-  min-height: 350px;
-  max-height: 450px;
+  min-height: 300px;
+  max-height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
