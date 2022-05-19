@@ -22,7 +22,7 @@ body {
 
 .layout {
     display: grid;
-    grid-template-columns: 5px 1fr 5px;
+    grid-template-columns: auto 1fr auto;
     grid-template-rows: 55px auto 2px auto 20px auto;
 }
 
@@ -38,15 +38,17 @@ body {
 
 .header {
     grid-row: 1 / 2;
-    grid-column: 2 / 3;
+    grid-column: -1 / 1;
     display: flex;
     justify-content: space-between; 
     align-items: flex-end; 
+    position: relative;
 }
 
 .hero {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
+    
 }
 
 .footer {
@@ -56,6 +58,70 @@ body {
     border-top: 2px solid #F6F6F6;
     background-color: #F6F6F6;
     letter-spacing: 1.5px;
+}
+
+.menu__checkbox {
+    position: absolute;
+    left: -9999px;
+}
+
+.menu__toggler {
+    cursor: pointer;
+}
+
+.menu__icon {
+    margin: 10px 10px 5px 10px;
+
+}
+
+.menu__bar {
+    width: 45px;
+    height: 5.5px;
+    background-color: #e7e6e6;
+    display: block;
+    border-radius: 25px;
+    margin-top: 6.5px;
+}
+
+.menu__list {
+    display: none;
+    margin: 0;
+    padding: 25px 40px;
+    list-style: none;
+    background-color: white;
+    position: absolute;
+    top: 57px;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 2px solid #e7e6e6;
+   
+}
+
+.menu__item {
+    border-bottom: 1px solid #F6F6F6;
+    padding: 15px 20px;
+}
+
+.menu__item--last {
+    border-bottom: 0;
+
+
+}
+
+.menu__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+
+.menu__checkbox:checked ~ .menu__list {
+    display: block;
+    
 }
 
 .footer__title {
@@ -121,7 +187,9 @@ body {
        border-radius: 50%;
        border: 1px solid #F6F6F6;
        position: absolute;
-       bottom: -15px
+       bottom: -15px;
+       z-index: 2;
+       margin: 0 5px;
        
 }
 
@@ -138,10 +206,6 @@ body {
     border-top: 2px solid #F6F6F6;
 }
 
-.tabs {
-    display: none;
-}
-
 .content__wrapper  {
     display: flex;
     flex-direction: column-reverse;
@@ -151,7 +215,6 @@ body {
     background-color: #F6F6F6;
     border: 1px solid #e7e6e6;
     padding: 40px 10px;
-    border-radius: 5px;
     text-align: center;
     position: relative;
 }
@@ -170,7 +233,7 @@ body {
 }
 
 .content__header {
-    padding: 25px 0 15px 0;
+    padding: 15px 0 15px 0;
     text-align: center;
 }
 
@@ -207,7 +270,6 @@ body {
     min-height: 300px;
     max-height: 350px;
     object-fit: cover;
-    border-radius: 5px;
     border: 1px solid #e7e6e6;
 }
 
@@ -544,6 +606,7 @@ body {
     .content__box {
         padding: 50px 40px 50px 40px;
         text-align: left;
+        border-radius: 5px;
     }
 
     .content__box--wide {
@@ -559,11 +622,13 @@ body {
         grid-column: 1 / -1;
     }
 
+
     .content__image img{
         height: 100%;
         min-height: 400px;
         max-height: 580px;
         object-fit: cover;
+        border-radius: 5px;
     }
 
     .content__element {
@@ -596,34 +661,29 @@ body {
         transform: scale(1.02)
 
     }
-    .tabs {
-        display: block;
-        font-size: 18px;
-        line-height: 1.4;
-        letter-spacing: 1.4px;
-        text-transform: uppercase;
-        font-weight: 300;
 
+    .menu__toggler {
+        display: none;
+   }
+   
+    .menu__list {
+        display: flex;
     }
 
-    .tab__item {
-        text-decoration: none;
-        color: #585858;
-        margin: 0 10px;
-        
+    .menu__item {
+        border-right: 1px solid white;
+        border-bottom: 0;
     }
 
-    .tab__item:hover, .tab__item:active {
-        color: #b58715;
-        transition: 0.2s linear;
-    }
-
-    .tab__item--last {
+    .menu__item--last {
         margin-right: 0;
     }
-    .menu-icon {
-        display: none;
+
+    .menu__link:hover, .menu__link:active {
+            color: #b58715;
+            transition: 0.2s linear;
     }
+
 
     .link__wrapper {
         margin: 0
