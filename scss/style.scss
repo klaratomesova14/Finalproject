@@ -72,8 +72,8 @@ body {
 
 
 
-.menu__icon, .submenu__icon {
-    margin: 10px 20px 8px 10px;
+.menu__icon {
+    margin: 10px 20px 5px 10px;
 
 }
 
@@ -98,7 +98,14 @@ body {
     z-index: 1;
     width: 100%;
     border-bottom: 2px solid #e7e6e6;
+    
    
+}
+
+
+.submenu__checkbox:checked ~ label .menu__arrow {
+    transform: rotate(180deg);
+
 }
 
 .submenu__list {
@@ -131,13 +138,15 @@ body {
 
 .menu__checkbox:checked ~ .menu__list {
     display: block;
-    
 }
 
 .submenu__checkbox:checked ~ .submenu__list {
     display: block;
-    
+  
 }
+
+
+
 .footer__title {
     text-align: center;
     margin: 0 auto;
@@ -254,7 +263,7 @@ body {
 
 .content__title {
     margin: 0 0 30px 0;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 24px;
