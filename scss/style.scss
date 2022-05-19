@@ -4,8 +4,15 @@ $font: #424141;
 $extra: #b58715;
 
 
-body {
+html {
     box-sizing: border-box;
+  }
+  
+*, ::before, ::after {
+    box-sizing: inherit;
+  }  
+
+body {
     margin: 0;
     font-family: 'Karla', sans-serif;
     font-weight: 200;
