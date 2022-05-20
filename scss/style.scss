@@ -23,7 +23,7 @@ body {
 .layout {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-template-rows: 55px auto 2px auto 20px auto;
+    grid-template-rows: 55px auto 2px auto auto auto;
 }
 
 .content {
@@ -54,10 +54,11 @@ body {
 .footer {
     grid-row: 6 / 7;
     grid-column: 1 / -1;
-    padding: 30px 5px;
-    border-top: 2px solid #F6F6F6;
-    background-color: #F6F6F6;
+    padding: 35px 5px;
     letter-spacing: 1.5px;
+    display: grid;
+    grid-auto-rows: 1fr 1fr;
+    align-items: center;
 }
 
 .menu__checkbox, .submenu__checkbox  {
@@ -145,7 +146,10 @@ body {
   
 }
 
-
+.footer__top {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
 
 .footer__title {
     text-align: center;
@@ -155,12 +159,14 @@ body {
     font-weight: 200;
 }
 
-.footer__content {
+.footer__bottom {
     display: grid;
     width: fit-content;
     margin: 5px auto 0 auto;
-    grid-template-columns: 1fr auto 1fr;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
     align-items: center;
+    grid-template-columns: 1fr auto 1fr;
     
 }
 
@@ -168,7 +174,8 @@ body {
     font-size: 14px;
     font-weight: 300;
     justify-self: right;
-    margin: 0
+    margin: 0;
+    grid-column: 1 / 2;
 }
 
 .footer__image {
@@ -176,6 +183,7 @@ body {
     height: 30px;
     margin: 0 5px;
     justify-self: center;
+    grid-column: 2 / 3;
 }
 
 .footer__link {
@@ -184,6 +192,7 @@ body {
     font-size: 14px;
     font-weight: 300;
     justify-self: left;
+    grid-column: 3 / 4;
 
 }
 
@@ -225,7 +234,6 @@ body {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-bottom: 2px solid #F6F6F6;
     border-top: 2px solid #F6F6F6;
 }
 
@@ -595,7 +603,7 @@ body {
     .layout {
         display: grid;
         grid-template-columns: 1fr 1150px 1fr;
-        grid-template-rows: 55px auto 40px auto 100px auto;
+        grid-template-rows: 55px auto 30px auto 40px auto;
     }
 
     .content {
@@ -757,7 +765,7 @@ body {
     }
 
     .footer {
-        padding: 20px 5px;
+        padding: 40px 5px;
     }
 
     .footer__title {
@@ -911,7 +919,7 @@ body {
     background-color: white;
     list-style: none;
     position: absolute;
-    top: 57.5px;
+    top: 60px;
     padding: 15px 20px;
     border-bottom: 2px solid #e7e6e6;
     width: 580px;
