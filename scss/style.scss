@@ -74,18 +74,25 @@ body {
 
 
 .menu__icon {
-    margin: 10px 20px 5px 10px;
-
+    margin: 0 15px 0 10px;
+    font-size: 50px;
+    position: relative;
+    top: 8px;
+    color: #cecbcb;
 }
 
-.menu__bar {
-    width: 35px;
-    height: 4px;
-    background-color: #424141;
+label .menu__icon--close {
+    display: none;
+}
+
+.menu__checkbox:checked ~ label .menu__icon--close { 
     display: block;
-    border-radius: 25px;
-    margin-top: 6px;
 }
+
+.menu__checkbox:checked ~ label .menu__icon--open { 
+    display: none;
+}
+
 
 .menu__list {
     display: none;
@@ -104,7 +111,7 @@ body {
 }
 
 
-.submenu__checkbox:checked ~ label .menu__arrow {
+.submenu__checkbox:checked ~ label .menu__icon--down {
     transform: rotate(180deg);
 
 }
@@ -154,7 +161,6 @@ body {
 .footer__title {
     text-align: center;
     margin: 0 auto;
-    padding-left: 25px;
     font-size: 20px;
     font-weight: 200;
 }
@@ -770,6 +776,7 @@ body {
 
     .footer__title {
         font-size: 24px;
+        padding-left: 25px;
     }
            
     .footer__subtitle {
