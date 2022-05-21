@@ -5,6 +5,7 @@
     grid-row: 4 / 5; 
     display: grid;
     grid-template-columns: 1fr;
+    gap: 5px;
 
     &__wrapper  {
         display: flex;
@@ -13,7 +14,6 @@
 
     &__box {
         background-color: colors.$primary;
-        border: 1px solid colors.$primary-darker;
         padding: 40px 15px;
         text-align: center;
         position: relative;
@@ -104,6 +104,7 @@
         padding: 50px 40px;
         text-align: left;
         border-radius: 5px;
+        border: 1px solid colors.$primary-darker;
     }
 
     &__box--centered {
