@@ -1,163 +1,162 @@
+@use "colors";
+@use "fonts";
+
 .content {
     grid-row: 4 / 5; 
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    gap: 5px 0;
-}
 
-.content__wrapper  {
-    display: flex;
-    flex-direction: column-reverse;
+    &__wrapper  {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
-}
-.content__box {
-    background-color: #F6F6F6;
-    border: 1px solid #e7e6e6;
-    padding: 40px 10px;
-    text-align: center;
-    position: relative;
-}
-
-.content__text--separate {
-    padding-bottom: 10px;
-}
-
-.content__text--centered {
-    text-align: center;
-}
-
-.content__text--last {
-    margin: 0
-
-}
-
-.content__header {
-    padding: 15px 0 15px 0;
-    text-align: center;
-}
+    &__box {
+        background-color: colors.$primary;
+        border: 1px solid colors.$primary-darker;
+        padding: 40px 15px;
+        text-align: center;
+        position: relative;
+    }
+    
+    &__header {
+        padding: 15px 0 5px 0;
+        text-align: center;
+    }
 
 
-.content__title {
-    margin: 0 0 30px 0;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 24px;
-}
+    &__title {
+        margin: 0 0 30px 0;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 24px;
+    }
 
-.content__title--big {
-    font-size: 30px;
-    margin: 0px;
-    letter-spacing: 1.2px;
-   
-}  
+    &__title--bigger {
+        font-size: 27px;
+        margin: 10px 0 5px 0;
+        letter-spacing: 1.2px;
+    }  
 
+    &__image {
+        height: 100%;
+        width: 100%;
+    }
 
-.content__text {
-    font-size: 18px;
-    line-height: 1.5;
+    &__image img {
+        width: 100%;
+        min-height: 300px;
+        max-height: 350px;
+        object-fit: cover;
+        border: 1px solid #e7e6e6;
+    }
 
-}
+    &__image--bigger img {
+        max-height: 500px;
+    }
 
-.content__image {
-    height: 100%;
-    width: 100%;
-}
+    &__subtitle {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
 
-.content__image img {
-    width: 100%;
-    min-height: 300px;
-    max-height: 350px;
-    object-fit: cover;
-    border: 1px solid #e7e6e6;
-}
+    &__subtitle--attention {
+        color: colors.$attention;
+    }
 
-.content__subtitle {
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
+    &__text {
+        font-size: 18px;
+        line-height: 1.5;
+    }
 
-.content__subtitle--attention {
-    color: rgb(177, 21, 21);
-}
+    &__text--separate {
+        padding-bottom: 10px;
+    }
 
-.content__text--personal {
-    font-size: 30px;
-    display: block;
-    margin: 30px 0 0 5px;
-    color: rgb(101, 100, 100);
+    &__text--centered {
+        text-align: center;
+    }
+
+    &__text--last {
+        margin: 0
+    }
+
+    &__text--special {
+        font-size: 30px;  
+        font-family: fonts.$special;   
+        margin: 30px 0 0 5px;
+    }
+    
 }
 
 @media screen and (min-width: 1100px) {
-    .content {
-        grid-row: 4 / 5;
-        grid-column: 2 / 3;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: auto;
-        gap: 15px 10px;
-    }
+    
+.content {
+    grid-column: 2 / 3;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 10px;
 
-    .content__box {
-        padding: 50px 40px 50px 40px;
+    &__box {
+        padding: 50px 40px;
         text-align: left;
         border-radius: 5px;
     }
 
-    .content__box--centered {
+    &__box--centered {
         text-align: center;
     }
 
-    .content__box--wide {
+    &__box--wide {
         grid-column: 1 / -1;
     }
 
-    .content__wrapper  {
+    &__wrapper  {
         display: contents;
-    
     }
 
-    .content__header {
+    &__header {
         grid-column: 1 / -1;
     }
 
-
-    .content__image img{
+    &__image img{
         height: 100%;
         min-height: 400px;
         max-height: 580px;
-        object-fit: cover;
         border-radius: 5px;
     }
 
-    .content__element {
+    &__element {
         position: absolute;
         bottom: 50px;
-
     }
 
-    .content__subtitle--centered {
+    &__title--bigger {
+        font-size: 30px;
+    }  
+
+    &__subtitle--centered {
         text-align: center;
     }
 
-    .content__subtitle--bigger {
+    &__subtitle--bigger {
         font-size: 30px;
         margin: 70px 0 20px 0;
-
     }
 
-    .content__text--bigger {
+    &__text--bigger {
         font-size: 22px;
         line-height: 1.5;
         margin-bottom: 80px;
     }
 
-    .content__text--separate {
+    &__text--separate {
         padding-bottom: 40px;
     }
+}
 
 }
+
