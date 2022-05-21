@@ -1,0 +1,54 @@
+.header {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end; 
+    position: relative;
+}
+
+
+.logo {
+    position: relative;
+}
+.logo__title {
+    font-family: 'Karla', sans-serif;;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 0 80px;
+
+}
+
+.logo__image {
+      width: 65px;
+      border-radius: 50%;
+      border: 1px solid #F6F6F6;
+      position: absolute;
+      bottom: -15px;
+      z-index: 2;
+      margin: 0 5px;
+      
+}
+
+.logo__link {
+   text-decoration: none;
+   color: #4f4e4e;
+}
+
+@media screen and (min-width: 1100px) {
+    
+
+.header {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end;
+    
+}
+
+.logo__link:hover {
+    transform: scale(1.02)
+
+}
+}

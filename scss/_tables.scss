@@ -1,0 +1,74 @@
+@use "colors";
+
+.table {
+    width: 100%;
+    font-weight: 200;
+    margin: 40px 0;
+    border-spacing: 0;
+    background-color: colors.$secondary;
+
+    &__data {
+        padding: 10px 15px;
+        border-bottom: 1px solid colors.$primary-darker;
+    }
+   
+    &__data--last {
+        border-bottom: none;
+    }
+   
+    &__data--left {
+        text-align: left;
+    }
+   
+    &__data--right {
+        text-align: right;
+    }
+   
+    &__data--attention {
+        color: colors.$attention;
+    }
+}
+
+   
+.table-big {
+    width: 100%;
+    background-color: colors.$secondary;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    border: 1px solid colors.$primary-darker;
+    border-spacing: 0;  
+    text-align: left;
+    font-weight: 300;
+
+    &__data {
+        padding: 5px 0;
+    }
+
+    &__data--underlined {
+        border-bottom: 1px solid colors.$primary;
+    }
+
+    &__title {
+        padding: 10px 0;
+        text-transform: uppercase;
+    }
+
+    &__value {
+        text-align: right;
+    }
+
+    &__info {
+        color: colors.$primary-darkest;
+        font-weight: 200;
+        font-style: italic;
+    }
+
+}
+
+@media screen and (min-width: 1100px){
+
+.table {
+    width: 90%;
+}
+
+}
