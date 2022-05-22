@@ -593,6 +593,7 @@ label .menu__icon--close {
 .footer__title {
   text-align: center;
   margin: 0 auto;
+  padding-left: 21px;
   font-size: 20px;
   font-weight: 200;
   font-family: "Square Peg", cursive;
@@ -611,7 +612,7 @@ label .menu__icon--close {
 }
 
 .footer__subtitle {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   justify-self: right;
   margin: 0;
@@ -629,7 +630,7 @@ label .menu__icon--close {
 .footer__link {
   text-decoration: none;
   color: #4f4e4e;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   justify-self: left;
   grid-column: 3/4;
