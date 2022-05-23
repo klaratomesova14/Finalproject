@@ -46,7 +46,6 @@
 
     &__image img {
         width: 100%;
-        min-height: 300px;
         max-height: 350px;
         object-fit: cover;
         border: 1px solid #e7e6e6;
@@ -93,7 +92,43 @@
     
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 550px) {
+    
+    .content {
+        gap: 10px 0;
+        grid-column: 2 / 3;
+
+        &__box {
+        padding: 50px 40px;
+        border-radius: 5px;
+        border: 1px solid colors.$primary-darker;
+        }   
+
+        &__image img{
+        max-height: 400px;
+        border-radius: 5px;
+    }
+
+}
+}
+
+@media screen and (min-width: 700px) {
+    
+    .content {
+        gap: 15px 0;
+
+        &__image img{
+            max-height: 500px;
+        }
+        
+        &__image--bigger img {
+            max-height: 750px;
+        }
+    }
+}
+
+    
+@media screen and (min-width: 1150px) {
     
 .content {
     grid-column: 2 / 3;
@@ -101,10 +136,7 @@
     gap: 15px 10px;
 
     &__box {
-        padding: 50px 40px;
         text-align: left;
-        border-radius: 5px;
-        border: 1px solid colors.$primary-darker;
     }
 
     &__box--centered {

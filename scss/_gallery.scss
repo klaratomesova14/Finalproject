@@ -37,7 +37,30 @@
     }
 }
 
-@media screen and (min-width: 1100px){
+@media screen and (min-width: 550px){
+    .gallery {
+    &__photo {
+        height: 400px;
+        border-radius: 5px;
+        }
+    }
+    }
+
+@media screen and (min-width: 700px){
+    
+.gallery {
+    &__photo {
+        height: 500px;
+        }
+
+    &__grid {
+        gap: 15px;        
+        }
+
+}
+}
+
+@media screen and (min-width: 1150px){
 
 .gallery {
     width: 1120px;

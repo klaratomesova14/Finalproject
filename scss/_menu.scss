@@ -53,10 +53,6 @@
         color: inherit;
     }
 }
-    
-.menu__checkbox:checked ~ .menu__list {
-    display: block;
-}
 
 .menu__checkbox:checked ~ label .menu__icon--close { 
     display: block;
@@ -69,7 +65,6 @@
 label .menu__icon--close {
     display: none;
 }
-
 
 .submenu {
     
@@ -105,18 +100,31 @@ label .menu__icon--close {
     }
 }
 
-.submenu__checkbox:checked ~ label .menu__icon--down {
+.submenu__checkbox:checked ~ .menu__item .menu__icon--down {
     transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1149px) {
+ 
+.menu__checkbox:checked ~ .menu__list {
+    display: block;
 }
 
 .submenu__checkbox:checked ~ .submenu__list {
     display: block;
 }
-.submenu__checkbox:checked ~ .submenu__list {
-    display: block; 
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 700px) {
+
+.menu {
+    &__list {
+        width: 60%;
+    }
+}
+}
+
+@media screen and (min-width: 1150px) {
 
 .menu {
 
@@ -125,6 +133,7 @@ label .menu__icon--close {
     }
 
     &__list {
+        width: 100%;
         display: flex;
     }
 

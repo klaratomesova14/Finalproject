@@ -35,7 +35,21 @@
    color: #4f4e4e;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 550px) {
+.header {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+}
+}
+
+@media screen and (min-width: 700px) {
+    .header {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+    }
+
+@media screen and (min-width: 1150px) {
     
 
 .header {
