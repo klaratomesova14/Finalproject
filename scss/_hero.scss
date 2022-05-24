@@ -9,23 +9,22 @@
         border-top: 2px solid colors.$primary;
     }
 
-
     &__photo--desktop {
         display: none;
-        }
+    }
 
     &__photo--mobile {
         height: 220px;
-    }
-    
+    }   
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 500px) {
+    
 .hero {
     grid-column: 1 / -1;
 
     &__photo {
-    border-bottom: 2px solid colors.$primary;
+        border-bottom: 2px solid colors.$primary;
     }
     
     &__photo--mobile {
@@ -39,8 +38,11 @@
 }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
+
 .hero {
+    grid-column: 1 / -1;
+    
     &__photo--desktop {
         height: 300px;
     }

@@ -115,7 +115,7 @@ label .menu__icon--close {
 }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
 
 .menu {
     &__list {
@@ -138,7 +138,6 @@ label .menu__icon--close {
     }
 
     &__item {
-        border-right: 1px solid colors.$secondary;
         border-bottom: none;
         padding: 0;
         margin: 0 10px;
@@ -178,7 +177,7 @@ label .menu__icon--close {
         margin: 0;
     }
 
-    &__item--last{
+    &__item--last {
         margin-right: 0;
     }
 
@@ -190,7 +189,5 @@ label .menu__icon--close {
 
 .submenu__checkbox:checked ~ .submenu__list {
     display: block;
-    justify-content:space-between;
 }
-
 }

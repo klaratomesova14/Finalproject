@@ -1,3 +1,6 @@
+@use "colors";
+@use "fonts";
+
 .header {
     grid-row: 1 / 2;
     display: flex;
@@ -6,63 +9,52 @@
     position: relative;
 }
 
-
 .logo {
     position: relative;
-}
-.logo__title {
-    font-family: 'Karla', sans-serif;;
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 1.2;
-    margin: 0 0 0 80px;
 
+    &__title {
+        font-family: fonts.$primary;
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 1.2;
+        margin: 0 0 0 80px;
+    }
+
+    &__image {
+        width: 65px;
+        border-radius: 50%;
+        border: 1px solid colors.$primary;
+        position: absolute;
+        bottom: -15px;
+        z-index: 2;
+        margin: 0 5px;   
+    }
+
+    &__link {
+    text-decoration: none;
+    color: colors.$font;
+    }
 }
 
-.logo__image {
-      width: 65px;
-      border-radius: 50%;
-      border: 1px solid #F6F6F6;
-      position: absolute;
-      bottom: -15px;
-      z-index: 2;
-      margin: 0 5px;
-      
-}
+@media screen and (min-width: 500px) {
 
-.logo__link {
-   text-decoration: none;
-   color: #4f4e4e;
-}
-
-@media screen and (min-width: 550px) {
 .header {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
 }
 }
 
-@media screen and (min-width: 700px) {
-    .header {
-        grid-row: 1 / 2;
-        grid-column: 2 / 3;
-    }
-    }
-
-@media screen and (min-width: 1150px) {
-    
+@media screen and (min-width: 750px) {
 
 .header {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-end;
-    
+}
 }
 
-.logo__link:hover {
-    transform: scale(1.02)
+@media screen and (min-width: 1150px) {
 
+.logo__link:hover {
+    transform: scale(1.02);
 }
 }

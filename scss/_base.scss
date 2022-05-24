@@ -3,18 +3,17 @@
 
 html {
     box-sizing: border-box;
-  }
+}
   
 *, ::before, ::after {
     box-sizing: inherit;
-  }  
+}  
 
 body {
     margin: 0;
     background-color: colors.$secondary;
     color: colors.$font;
     font-family: fonts.$primary;
-    font-weight: 200;
-    
+    font-weight: 200; 
 }
 

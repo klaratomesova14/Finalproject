@@ -39,30 +39,41 @@
     }
 }
 
-@media screen and (min-width: 550px) {
-    .cards {
-        padding-top: 20px;
-        gap: 10px 0;
+@media screen and (min-width: 500px) {
+
+.card {
+
+    &__image {
+        height: 280px;
+    }
+}
+}
+
+@media screen and (min-width: 750px) {
+
+.cards {
+    padding-top: 20px;
+    gap: 10px 0;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    
+    &__image {
+        border-radius: 5px 0 0 5px;
+        height: 100%;   
     }
 
-    .card {
-        display: grid;
-        grid-template-columns: 40% 60%;
-       
-        &__image {
-            border-radius: 5px 0 0 5px;
-            height: 100%;   
-        }
-
-        &__bottom {
-            padding: 40px 20px;
-            align-self: center;
-        }
-
-        &__title {
-            margin-bottom: 30px;
-        }
+    &__bottom {
+        padding: 40px 20px;
+        align-self: center;
     }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+}
 }
 
 
