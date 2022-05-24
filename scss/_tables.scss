@@ -2,7 +2,7 @@
 
 .table {
     width: 100%;
-    font-weight: 200;
+    font-weight: 300;
     margin: 40px 0;
     border-spacing: 0;
     background-color: colors.$secondary;
@@ -38,7 +38,6 @@
     border: 1px solid colors.$primary-darker;
     border-spacing: 0;  
     text-align: left;
-    font-weight: 300;
 
     &__data {
         padding: 5px 0;
@@ -51,6 +50,8 @@
     &__title {
         padding: 10px 0;
         text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 400;
     }
 
     &__value {
@@ -59,7 +60,7 @@
 
     &__info {
         color: colors.$primary-darkest;
-        font-weight: 200;
+        font-weight: 300;
         font-style: italic;
     }
 }
@@ -69,5 +70,4 @@
 .table {
     width: 90%;
 }
-
 }

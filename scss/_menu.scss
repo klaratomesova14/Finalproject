@@ -25,6 +25,7 @@
         margin: 0;
         padding: 25px 40px;
         list-style: none;
+        line-height: 1.2;
         background-color: colors.$secondary;
         position: absolute;
         top: 57px;
@@ -36,11 +37,11 @@
         
     &__item {
         border-bottom: 1px solid colors.$primary;
-        padding: 15px 20px;
-        font-size: 18px;
+        padding: 15px 18px;
+        font-size: 20px;
         font-weight: 300;
         text-transform: uppercase;
-        letter-spacing: 1.4px;
+        letter-spacing: 1.3px;
     }
 
     &__item--last {
@@ -83,6 +84,9 @@ label .menu__icon--close {
     &__item{
         border-bottom: 1px solid colors.$primary;
         padding: 15px 20px;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
     }
 
     &__item--last{
@@ -92,11 +96,7 @@ label .menu__icon--close {
     &__link {
         display: block;
         text-decoration: none;
-        color: inherit;
-        font-size: 18px;
-        font-weight: 300;
-        text-transform: uppercase;
-        letter-spacing: 1.4px;
+        color: colors.$font;
     }
 }
 
