@@ -13,18 +13,18 @@
     }
 
     &__icon {
-        margin: 0 10px;
+        margin: 0 15px;
         position: relative;
-        top: 6px;
+        top: 7px;
         color: colors.$font;
 
         &--open {
-            font-size: 35px;
+            font-size: 40px;
             margin-bottom: 5px;
         }
 
         &--close{
-            font-size: 45px;
+            font-size: 50px;
         }
     }
 
