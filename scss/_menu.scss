@@ -41,7 +41,7 @@
         font-size: 20px;
         font-weight: 300;
         text-transform: uppercase;
-        letter-spacing: 1.3px;
+        letter-spacing: 1.2px;
     }
 
     &__item--last {
@@ -86,7 +86,7 @@ label .menu__icon--close {
         padding: 15px 20px;
         font-size: 20px;
         text-transform: uppercase;
-        letter-spacing: 1.4px;
+        letter-spacing: 1.2px;
     }
 
     &__item--last{
@@ -181,7 +181,7 @@ label .menu__icon--close {
         margin-right: 0;
     }
 
-    &__item:hover {
+    &__link:hover {
         color: colors.$complementary;
         transition: 0.2s linear;
     }
