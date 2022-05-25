@@ -98,11 +98,17 @@ body {
   cursor: pointer;
 }
 .menu__icon {
-  margin: 0 15px 0 10px;
-  font-size: 45px;
+  margin: 0 10px;
   position: relative;
-  top: 7px;
+  top: 6px;
   color: #424141;
+}
+.menu__icon--open {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+.menu__icon--close {
+  font-size: 45px;
 }
 .menu__list {
   display: none;
@@ -377,7 +383,6 @@ label .menu__icon--close {
   .content__image {
     max-height: 350px;
     border-radius: 5px;
-    border: 1px solid #e7e6e6;
   }
   .content__image--bigger {
     max-height: 550px;
@@ -504,6 +509,7 @@ label .menu__icon--close {
 }
 .table-big__value {
   text-align: right;
+  padding-left: 10px;
 }
 .table-big__info {
   color: #898585;
