@@ -26,14 +26,9 @@
     &__photo {
         border-bottom: 2px solid colors.$primary;
     }
-    
-    &__photo--mobile {
-        display: none;
-    }
 
-    &__photo--desktop {
+    &__photo--mobile {
         height: 250px;
-        display: block;
     }
 }
 }
@@ -42,12 +37,16 @@
 
 .hero {
     grid-column: 1 / -1;
+    &__photo--mobile {
+        display: none;
+    }
+
     &__photo--desktop {
-        height: 300px;
+        display: block;
+        height: 250px;
     }
 }
 }
-    
 
 @media screen and (min-width: 1150px) {
 
@@ -55,6 +54,10 @@
     grid-column: 1 / -1;
 
     &__photo--desktop {
+        height: 310px;
+    }
+
+    &__photo--homepage {
         height: 350px;
     }
 }

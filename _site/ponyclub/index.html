@@ -14,61 +14,90 @@
      <script src="https://kit.fontawesome.com/cce590eaf9.js" crossorigin="anonymous"></script>
      
 </head>
+
 <body>
         
-    <div class="layout">
+    <div class="layout ">
 
         <header class="header">
-            <a class="logo__link" href="/">
-                <div class="logo">
-                    <img class="logo__image" src="/images/logoyellow2.png" alt="Logo Ráje poníků">
-                    <h1 class="logo__title">Ráj poníků</h1>
-                </div>
-            </a>
 
-            <nav class="menu">
-                <input type="checkbox" class="menu__checkbox" id="menu__checkbox">
+    <a class="logo__link" href="/">
+    <div class="logo">
+        <img class="logo__image" src="/images/logoyellow2.png" alt="Logo Ráje poníků">
+        <h1 class="logo__title">Ráj poníků</h1>
+    </div>
+</a>
 
-                <label for="menu__checkbox" class="menu__toggler">
-                  <i class="menu__icon menu__icon--open fa-solid fa-bars"></i>
-                  <i class="menu__icon menu__icon--close fa-solid fa-xmark"></i>
-                </label>
+    <nav class="menu">
+    <input type="checkbox" class="menu__checkbox" id="menu__checkbox">
 
-                <ul class="menu__list">
+    <label for="menu__checkbox" class="menu__toggler">
+        <i class="menu__icon menu__icon--open fa-solid fa-bars"></i>
+        <i class="menu__icon menu__icon--close fa-solid fa-xmark"></i>
+    </label>
 
-                    <nav class="submenu">    
-                        
-                        <input type="checkbox" class="submenu__checkbox" id="submenu__checkbox">
+    <ul class="menu__list">
 
-                        <li class="menu__item">
-                            <label for="submenu__checkbox" class="submenu__toggler">
-                            Nabízíme <i class=" menu__icon--down fa-solid fa-chevron-down"></i></label>
-                        </li>
-                        
-                        <ul class="submenu__list">
-                            <li class="submenu__item"><a class="submenu__link" href="/projizdky/">Projížďky</a></li>
-                            <li class="submenu__item"><a class="submenu__link" href="/ponyclub/">Ponyclub</a></li>
-                            <li class="submenu__item"><a class="submenu__link" href="/program/">Program pro školky & oslavy
-                            </a></li>
-                            <li class="submenu__item submenu__item--last"><a class="submenu__link" href="/primestsky-tabor/">Příměstský tábor</a></li>
-                        </ul>
-                    </nav>
-                    
-                    <li class="menu__item"><a class="menu__link" href="/nasi-ponici/">Naši poníci</a></li>
-                    <li class="menu__item"><a class="menu__link" href="/fotogalerie/">Fotogalerie</a></li>
-                    <li class="menu__item"><a class="menu__link" href="/cenik/">Ceník</a></li>
-                    <li class="menu__item menu__item--last"><a class="menu__link" href="/kontakt/">Kontakt</a></li>
-                </ul>
-            </nav>   
-        </header>
+        <nav class="submenu">    
+            
+            <input type="checkbox" class="submenu__checkbox" id="submenu__checkbox">
+
+            <li class="menu__item 
+            
+            
+            menu__item--active
+            
+                                    
+            ">
+                <label for="submenu__checkbox" class="submenu__toggler">
+                Nabízíme<i class=" menu__icon--down fa-solid fa-chevron-down"></i></label>
+            </li>
+            
+            <ul class="submenu__list">
+                <li class="submenu__item"><a class="submenu__link 
+                
+                " href="/projizdky/">Projížďky</a></li>
+
+                <li class="submenu__item"><a class="submenu__link 
+                submenu__link--active
+                " href="/ponyclub/">Ponyclub</a></li>
+
+                <li class="submenu__item"><a class="submenu__link 
+                
+                " href="/program/">Program pro školky & oslavy
+                </a></li>
+
+                <li class="submenu__item submenu__item--last"><a class="submenu__link
+                
+                " href="/primestsky-tabor/">Příměstský tábor</a></li>
+            </ul>
+        </nav>
+        
+        <li class="menu__item
+        
+        "><a class="menu__link" href="/nasi-ponici/">Naši poníci</a></li>
+        <li class="menu__item
+        
+        "><a class="menu__link" href="/fotogalerie/">Fotogalerie</a></li>
+        <li class="menu__item
+        
+        "><a class="menu__link" href="/cenik/">Ceník</a></li>
+        <li class="menu__item menu__item--last
+        
+        "><a class="menu__link" href="/kontakt/">Kontakt</a></li>
+    </ul>
+</nav>   
+        
+</header>
 
         <div class= "hero">
-                <img class="hero__photo hero__photo--mobile" src="/images/hero-mobile.jpg" alt="Holčička s poníky">
-                <img class="hero__photo hero__photo--desktop" src="/images/hero.jpg" alt="Holčička s poníky">
-        </div>
+        <img class="hero__photo hero__photo--mobile "" src="/images/hero-mobile.jpg" alt="Holčička s poníky">
+        <img class="hero__photo hero__photo--desktop " src="/images/hero.jpg" alt="Holčička s poníky">
+</div>
 
         <div class="content">
-        <div class="content__header">
+    <div class="content__header">
+    <div class="breadcrumbs"><a class="breadcrumbs__link" href="/">Domů</a> / <a class="breadcrumbs__link" href="/ponyclub/">Ponyclub</a></div>
     <h1 class="content__title content__title--bigger">Ponyclub</h1>
 </div>
 
@@ -146,21 +175,22 @@
 
 
 
-        </div>    
+</div>      
 
         <footer class="footer">
-                <div class="footer__top">
-                    <h3 class="footer__title handwriting">„Naším přáním je přinášet radost dětem i koním.“</h3> 
-                </div>
-
-                <div class="footer__bottom">
-                    <h4 class="footer__subtitle">© Ráj poníků, 2022</h4>
-                    <img class="footer__image" src="/images/logoyellow2.png" alt="Logo Ráje poníků">
-                    <a class="footer__link" href="mailto:rajponiku@seznam.cz">rajponiku@seznam.cz</a>
-                </div>
-        </footer>
+    <div class="footer__top">
+        <h3 class="footer__title handwriting">„Naším přáním je přinášet radost dětem i koním.“</h3> 
     </div>
 
-    <script src="/javascript/fslightbox.js"></script>
+    <div class="footer__bottom">
+        <h4 class="footer__subtitle">© Ráj poníků, 2022</h4>
+        <img class="footer__image" src="/images/logoyellow2.png" alt="Logo Ráje poníků">
+        <a class="footer__link" href="mailto:rajponiku@seznam.cz">rajponiku@seznam.cz</a>
+    </div>
+</footer>
+
+    </div>
+
+<script src="/javascript/fslightbox.js"></script>
 </body>
 </html>

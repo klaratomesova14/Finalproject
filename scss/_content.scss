@@ -19,8 +19,7 @@
         }
     
     &__header {
-        padding: 15px 0 5px 0;
-        text-align: center;
+        margin: 0;
     }
 
     &__title {
@@ -33,7 +32,8 @@
 
     &__title--bigger {
         font-size: 27px;
-        margin: 10px 0 5px 0;
+        margin: 15px 0 5px 0;
+        text-align: center;
         letter-spacing: 1.2px;
     }  
 
@@ -112,6 +112,11 @@
     &__image img {
         border-radius: 5px;
     }
+
+    &__title--bigger {
+        font-size: 27px;
+        margin: 10px 0 5px 0;
+    }
 }
 }
 
@@ -128,7 +133,11 @@
         &__image--bigger {
             max-height: 700px;
         }
-    }
+
+        &__title--bigger {
+            margin: 0;
+        }
+}
 }
 
     
@@ -168,6 +177,7 @@
 
     &__header {
         grid-column: 1 / -1;
+        padding: 0;
     }
 
     &__image {
@@ -185,6 +195,8 @@
 
     &__title--bigger {
         font-size: 30px;
+        line-height: 1;
+        margin: 10px 0 5px 0;
     }  
 
     &__subtitle--centered {

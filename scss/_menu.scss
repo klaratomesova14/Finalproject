@@ -13,9 +13,8 @@
     }
 
     &__icon {
-        margin: 0 15px;
         position: relative;
-        top: 7px;
+        top: 8px;
         color: colors.$font;
 
         &--open {
@@ -25,6 +24,11 @@
 
         &--close{
             font-size: 50px;
+        }
+
+        &--down {
+            font-size: 18px;
+            margin: 3px;
         }
     }
 
@@ -166,6 +170,10 @@ label .menu__icon--close {
         color: colors.$complementary;
         transition: 0.2s linear;
     }
+
+    &__item--active {
+        font-weight: 500;
+    } 
 }
 
 .submenu {
@@ -193,6 +201,11 @@ label .menu__icon--close {
         color: colors.$complementary;
         transition: 0.2s linear;
     }
+
+    &__link--active {
+        font-weight: 500;
+    } 
+    
 }
 
 .submenu__checkbox:checked ~ .submenu__list {
