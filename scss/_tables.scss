@@ -10,25 +10,24 @@
     &__data {
         padding: 10px 15px;
         border-bottom: 1px solid colors.$primary-darker;
-    }
-   
-    &__data--last {
-        border-bottom: none;
-    }
-   
-    &__data--left {
-        text-align: left;
-    }
-   
-    &__data--right {
-        text-align: right;
-    }
-   
-    &__data--attention {
-        color: colors.$attention;
-    }
+    
+        &--last {
+            border-bottom: none;
+        }
+    
+        &--left {
+            text-align: left;
+        }
+    
+        &--right {
+            text-align: right;
+        }
+    
+        &--attention {
+            color: colors.$attention;
+        }
+    }    
 }
-
    
 .table-big {
     width: 100%;
@@ -41,10 +40,10 @@
 
     &__data {
         padding: 5px 0;
-    }
 
-    &__data--underlined {
-        border-bottom: 1px solid colors.$primary;
+        &--underlined {
+            border-bottom: 1px solid colors.$primary;
+        }
     }
 
     &__title {
@@ -67,7 +66,7 @@
 }
 
 @media screen and (min-width: 1150px){
-
+    
 .table {
     width: 90%;
 }

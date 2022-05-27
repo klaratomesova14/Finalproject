@@ -37,6 +37,7 @@
     &__link {
         text-decoration: none;
         color: colors.$font;
+        border-radius: 5px;
     }
 }
 
@@ -64,6 +65,7 @@
 .card {
     display: grid;
     grid-template-columns: 45% 55%;
+    grid-template-rows: 210px;
     
     &__image {
         border-radius: 5px 0 0 5px;
@@ -71,12 +73,13 @@
     }
 
     &__bottom {
-        padding: 40px 20px;
+        padding: 30px 20px;
         align-self: center;
     }
 
     &__title {
-        margin-bottom: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 }
 }
@@ -98,6 +101,7 @@
 
     &__image {
         border-radius: 5px 5px 0 0;
+        height: 160px;
     }
 
     &__bottom {
@@ -117,12 +121,9 @@
         text-align: center;
     }
 
-    &__image {
-        height: 160px;
-    }
-
-    &__link:hover {
+    &__link:hover .card {
         transform: scale(1.02);
+        border-width: 1.5px;
     }
 }
 }

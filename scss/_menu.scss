@@ -54,17 +54,21 @@
         font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 1.2px;
+
+        &--last {
+            border-bottom: 0;
+        }
     }
 
-    &__item--last {
-        border-bottom: 0;
-    }
-
-    &__link {
+    &__link {                  
         display: block;
         text-decoration: none;
-        color: inherit;
+        color: colors.$font;
     }
+}
+
+label .menu__icon--close {
+    display: none;
 }
 
 .menu__checkbox:checked ~ label .menu__icon--close { 
@@ -75,8 +79,8 @@
     display: none;
 }    
     
-label .menu__icon--close {
-    display: none;
+.submenu__checkbox:checked ~ .menu__item .menu__icon--down {
+    transform: rotate(180deg);
 }
 
 .submenu {
@@ -93,16 +97,17 @@ label .menu__icon--close {
     &__list {
         display: none;
     }
-    &__item{
+
+    &__item {
         border-bottom: 1px solid colors.$primary;
         padding: 15px 20px;
         font-size: 20px;
         text-transform: uppercase;
         letter-spacing: 1.2px;
-    }
 
-    &__item--last{
-        border-bottom: 0;
+        &--last {
+            border-bottom: 0;
+        }
     }
 
     &__link {
@@ -110,10 +115,6 @@ label .menu__icon--close {
         text-decoration: none;
         color: colors.$font;
     }
-}
-
-.submenu__checkbox:checked ~ .menu__item .menu__icon--down {
-    transform: rotate(180deg);
 }
 
 @media screen and (max-width: 1149px) {
@@ -147,36 +148,34 @@ label .menu__icon--close {
     &__list {
         width: 100%;
         display: flex;
+        margin: 0;
+        padding: 0;
+        position: static;
+        border-bottom: none;
     }
 
     &__item {
         border-bottom: none;
         padding: 0;
         margin: 0 10px;
+
+        &--last {
+            margin-right: 0;
+        }
+
+        :hover {
+            color: colors.$complementary;
+            transition: 0.2s linear;
+        }
+
+        &--active {
+            font-weight: 500;
+        }
     }
-
-    &__item--last {
-        margin-right: 0;
-    }
-
-    &__list {
-        margin: 0;
-        padding: 0;
-        position:inherit;
-        border-bottom: none;
-    }  
-
-    &__item:hover {
-        color: colors.$complementary;
-        transition: 0.2s linear;
-    }
-
-    &__item--active {
-        font-weight: 500;
-    } 
 }
 
 .submenu {
+
     &__list {
         background-color: colors.$secondary;
         list-style: none;
@@ -185,7 +184,7 @@ label .menu__icon--close {
         padding: 15px 15px;
         width: 280px;
         border-radius: 2px;
-        box-shadow: 2px
+        box-shadow: 1px 1px 1px colors.$primary;
     }
 
     &__item {
@@ -193,19 +192,17 @@ label .menu__icon--close {
         margin: 0;
     }
 
-    &__item--last {
-        margin-right: 0;
-    }
+    &__link {
 
-    &__link:hover {
-        color: colors.$complementary;
-        transition: 0.2s linear;
-    }
+        :hover {
+            color: colors.$complementary;
+            transition: 0.2s linear;
+        }
 
-    &__link--active {
-        font-weight: 500;
-    } 
-    
+        &--active {
+            font-weight: 500;
+        }   
+    }
 }
 
 .submenu__checkbox:checked ~ .submenu__list {

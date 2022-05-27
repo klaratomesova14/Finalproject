@@ -8,7 +8,6 @@
     align-items: flex-end; 
     position: relative;
     padding: 0 15px 2px 10px;
-
 }
 
 .logo {
@@ -34,7 +33,7 @@
     &__link {
         text-decoration: none;
         color: colors.$font;
-        }
+    }
 }
 
 @media screen and (min-width: 500px) {
@@ -55,6 +54,7 @@
 }
 
 @media screen and (min-width: 1150px) {
+    
 .header {
     padding: 0 5px 2px 5px;
 }

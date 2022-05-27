@@ -16,7 +16,7 @@
         padding: 40px 15px;
         text-align: center;
         position: relative;
-        }
+    }
     
     &__header {
         margin: 0;
@@ -28,28 +28,28 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 24px;
-    }
 
-    &__title--bigger {
-        font-size: 27px;
-        margin: 15px 0 5px 0;
-        text-align: center;
-        letter-spacing: 1.2px;
-    }  
+        &--bigger {
+            font-size: 27px;
+            margin: 15px 0 5px 0;
+            text-align: center;
+            letter-spacing: 1.2px;
+        }  
+    }
 
     &__image {
         max-height: 250px;
         width: 100%;
-    }
+   
+        &--bigger {
+            max-height: 450px;
+        }
 
-    &__image--bigger {
-        max-height: 450px;
-    }
-
-    &__image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;    
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;    
+        }
     }
 
     &__subtitle {
@@ -58,34 +58,101 @@
         margin-bottom: 30px;
         font-weight: 400;
         text-transform: uppercase;
-    }
 
-    &__subtitle--attention {
-        color: colors.$attention;
+        &--attention {
+            color: colors.$attention;
+        }
     }
 
     &__text {
         font-size: 18px;
         line-height: 1.5;
-    }
 
-    &__text--separate {
-        padding-bottom: 10px;
-    }
+        &--separate {
+            padding-bottom: 10px;
+        }
 
-    &__text--centered {
-        text-align: center;
-    }
+        &--centered {
+            text-align: center;
+        }
 
-    &__text--last {
-        margin: 0
-    }
+        &--last {
+            margin: 0
+        }
 
-    &__text--special {
-        font-size: 32px;  
-        font-family: fonts.$special;   
-        margin: 30px 0 0 5px;
+        &--special {
+            font-size: 32px;  
+            font-family: fonts.$special;   
+            margin: 30px 0 0 5px;
+        }
     }  
+}
+
+.button {
+    border-radius: 25px;
+    padding: 10px 15px;
+    background-color: colors.$complementary-lighter;
+    border: 1px solid colors.$complementary-lighter;
+    font-weight: 300;
+    color: colors.$font;
+    font-size: 16px;
+    margin: 20px 0 15px 0;
+    display: inline-block;
+
+    &__link {
+        text-decoration: none; 
+    }
+}
+
+.link {
+    color: colors.$font;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 3px;
+        margin: 0 auto ;
+        width: fit-content;
+        align-items: center;
+    }
+
+    &__icon {
+        height: 25px;  
+        width: 25px
+    }
+
+    &__text {
+       margin: 0;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__tel {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.map {
+    margin: 30px 0 10px 0;
+}
+
+.list {
+    list-style: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        margin: 10px 0;
+    }
+}
+
+.breadcrumbs {
+    display: none;
 }
 
 @media screen and (min-width: 500px) {
@@ -103,14 +170,14 @@
     &__image {
         max-height: 350px;
         border-radius: 5px;
-    }
 
-    &__image--bigger {
-        max-height: 550px;
-    }
+        &--bigger {
+            max-height: 550px;
+        }
 
-    &__image img {
-        border-radius: 5px;
+        & img {
+            border-radius: 5px;
+        }
     }
 
     &__title--bigger {
@@ -122,25 +189,42 @@
 
 @media screen and (min-width: 750px) {
     
-    .content {
-        gap: 15px;
-        grid-column: 2 / 3;
+.content {
+    gap: 15px;
+    grid-column: 2 / 3;
 
-        &__image {
-            max-height: 450px;
-        }
-        
-        &__image--bigger {
+    &__image {
+        max-height: 450px;
+    
+        &--bigger {
             max-height: 700px;
         }
+    }
 
-        &__title--bigger {
-            margin: 0;
-        }
+    &__title--bigger {
+        margin: 15px 0 0 0;
+    }
+}
+
+.breadcrumbs {
+    display: block;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 5px;
+
+    &__link {
+        text-decoration: none;
+        color: colors.$primary-darkest;
+    }
+
+    &__icon {
+        font-size: 10px;
+        margin: 0 10px;
+        color: colors.$primary-darkest;
+    }
 }
 }
 
-    
 @media screen and (min-width: 1150px) {
     
 .content {
@@ -150,29 +234,25 @@
 
     &__box {
         text-align: left;
-    }
 
-    &__box--centered {
-        text-align: center;
-    }
+        &--centered {
+            text-align: center;
+        }
 
-    &__box--wide {
-        grid-column: 1 / -1;
+        &--wide {
+            grid-column: 1 / -1;
+        }
+        
+        &--wrapped {
+            order: 2;
+        }
     }
-
+       
     &__wrapper {
         grid-column: 1 / -1;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-    }
-
-    &__box--wrapped {
-        order: 2;
-    }
-
-    &__image--wrapped {
-        order: 1;
     }
 
     &__header {
@@ -182,10 +262,14 @@
 
     &__image {
         max-height: 580px;
-    }
 
-    &__image--bigger {
-        max-height: 650px;
+        &--wrapped {
+            order: 1;
+        }
+
+        &--bigger {
+            max-height: 650px;
+        }
     }
 
     &__element {
@@ -199,23 +283,65 @@
         margin: 10px 0 5px 0;
     }  
 
-    &__subtitle--centered {
-        text-align: center;
+    &__subtitle {
+
+        &--centered {
+            text-align: center;
+        }
+
+        &--bigger {
+            font-size: 30px;
+            margin: 70px 0 20px 0;
+        }
     }
 
-    &__subtitle--bigger {
-        font-size: 30px;
-        margin: 70px 0 20px 0;
+    &__text {
+
+        &--bigger {
+            font-size: 22px;
+            line-height: 1.5;
+            margin-bottom: 80px;
+        }
+
+        &--separate {
+            padding-bottom: 40px;
+        }
+    }
+}
+
+.link {
+
+    &:hover{
+        text-decoration: none;
     }
 
-    &__text--bigger {
-        font-size: 22px;
-        line-height: 1.5;
-        margin-bottom: 80px;
+    &__wrapper {
+        margin: 0
     }
 
-    &__text--separate {
-        padding-bottom: 40px;
+    &__icon:hover {
+        transform: scale(1.1);
+    }
+}
+    
+.button {
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+        text-decoration: underline;
+    }
+}
+
+.breadcrumbs {
+    font-size: 18px;
+
+    &__icon {
+        font-size: 12px;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
     }
 }
 }

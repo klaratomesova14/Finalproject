@@ -16,7 +16,11 @@
 
 .layout {
     display: grid;
-    grid-template-columns: 45px auto 45px;
+    grid-template-columns: 30px auto 30px;
+    grid-template-rows: 55px auto 15px auto 0 auto;
+}
+
+.layout--homepage {
     grid-template-rows: 55px auto 20px auto 0 auto;
 }
 }

@@ -62,25 +62,25 @@
 @media screen and (min-width: 1150px){
 
 .gallery {
-    width: 1120px;
+    width: 1150px;
 
     &__grid {
         grid-column: 1 / -1;
         gap: 20px;        
-    }
 
-    &__grid--two {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 450px;
-        gap: 5px;
-    }
+        &--two {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 450px;
+            gap: 5px;
+        }
 
-    &__grid--six {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 225px);
-        gap: 5px;
+        &--six {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 225px);
+            gap: 5px;
+        }
     }
 
     &__grid--six &__item:first-child,
@@ -101,7 +101,7 @@
     }
 
     &__title {
-    line-height: 35px;
+        line-height: 35px;
     }
 }
 }
