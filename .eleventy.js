@@ -8,6 +8,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("files");
 
     eleventyConfig.addPassthroughCopy("javascript");
+
+    eleventyConfig.addPassthroughCopy("icons");
   
     // Zkopírovat css/ to _site/css/
     eleventyConfig.addPassthroughCopy("css");
