@@ -194,7 +194,7 @@ label .menu__icon--close {
 
     &__link {
 
-        :hover {
+        &:hover {
             color: colors.$complementary;
             transition: 0.2s linear;
         }

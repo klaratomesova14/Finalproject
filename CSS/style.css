@@ -254,7 +254,7 @@ label .menu__icon--close {
     padding: 15px 15px 10px 10px;
     margin: 0;
   }
-  .submenu__link :hover {
+  .submenu__link:hover {
     color: #b58715;
     transition: 0.2s linear;
   }
@@ -624,6 +624,7 @@ label .menu__icon--close {
   background-color: #ffffff;
   padding: 10px;
   margin: 0 0 20px 0;
+  border-radius: 2px;
   border: 1px solid #e7e6e6;
   border-spacing: 0;
   text-align: left;
@@ -807,9 +808,6 @@ label .menu__icon--close {
   }
 }
 @media screen and (min-width: 1150px) {
-  .gallery {
-    width: 1150px;
-  }
   .gallery__grid {
     grid-column: 1/-1;
     gap: 20px;
