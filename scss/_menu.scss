@@ -12,18 +12,35 @@
         cursor: pointer;
     }
 
+    &__label {
+        display: flex;
+        align-items: center;
+        margin: 2px 0px;
+
+        &--close {
+            position: relative;
+            top: 3px;
+        }
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 5px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }    
+
     &__icon {
-        position: relative;
-        top: 8px;
         color: colors.$font;
 
         &--open {
-            font-size: 40px;
-            margin-bottom: 5px;
+            font-size: 30px;
+            margin-bottom: 0;
         }
 
         &--close{
-            font-size: 50px;
+            font-size: 35px;
         }
 
         &--down {
@@ -67,15 +84,15 @@
     }
 }
 
-label .menu__icon--close {
+label .menu__label--close {
     display: none;
 }
 
-.menu__checkbox:checked ~ label .menu__icon--close { 
-    display: block;
+.menu__checkbox:checked ~ label .menu__label--close { 
+    display: flex;
 }
 
-.menu__checkbox:checked ~ label .menu__icon--open { 
+.menu__checkbox:checked ~ label .menu__label--open { 
     display: none;
 }    
     
