@@ -96,11 +96,13 @@ label .menu__icon--close {
 
     &__list {
         display: none;
+        list-style: none;
+        padding-left: 25px;
     }
 
     &__item {
         border-bottom: 1px solid colors.$primary;
-        padding: 15px 20px;
+        padding: 10px 20px;
         font-size: 20px;
         text-transform: uppercase;
         letter-spacing: 1.2px;
@@ -179,7 +181,6 @@ label .menu__icon--close {
 
     &__list {
         background-color: colors.$secondary;
-        list-style: none;
         position: absolute;
         top: 57.5px;
         padding: 15px 15px;
