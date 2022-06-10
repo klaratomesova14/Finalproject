@@ -199,9 +199,8 @@ label .menu__label--close {
   padding-left: 25px;
 }
 .submenu__item {
-  border-bottom: 1px solid #F6F6F6;
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 15px 10px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
 }
