@@ -175,7 +175,7 @@ label .menu__label--close {
 }
 
 .menu__checkbox:checked ~ label .menu__label--close {
-  display: flex;
+  display: block;
 }
 
 .menu__checkbox:checked ~ label .menu__label--open {
