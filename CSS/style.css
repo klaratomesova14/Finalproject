@@ -861,7 +861,7 @@ label .menu__label--close {
 }
 .footer {
   grid-row: 6/7;
-  padding: 35px 5px;
+  padding: 25px 5px;
   letter-spacing: 1.5px;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -880,7 +880,6 @@ label .menu__label--close {
 .footer__title {
   text-align: center;
   margin: 0;
-  padding-left: 5px;
   font-size: 22px;
   font-family: "Square Peg", cursive;
 }
@@ -889,15 +888,15 @@ label .menu__label--close {
 }
 .footer__subtitle {
   grid-column: 1/2;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   justify-self: right;
   margin: 0;
 }
 .footer__image {
   grid-column: 2/3;
-  width: 35px;
-  height: 35px;
+  width: 20px;
+  height: 20px;
   margin: 0 10px;
   justify-self: left;
 }
