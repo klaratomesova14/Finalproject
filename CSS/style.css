@@ -864,7 +864,8 @@ label .menu__label--close {
   padding: 25px 5px;
   letter-spacing: 1.5px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 5px;
   align-items: center;
 }
 .footer__top {
@@ -882,6 +883,7 @@ label .menu__label--close {
   margin: 0;
   font-size: 22px;
   font-family: "Square Peg", cursive;
+  letter-spacing: 2px;
 }
 .footer__title--desktop {
   display: none;
@@ -895,8 +897,8 @@ label .menu__label--close {
 }
 .footer__image {
   grid-column: 2/3;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   margin: 0 10px;
   justify-self: left;
 }
