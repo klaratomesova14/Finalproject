@@ -195,8 +195,8 @@ label .menu__label--close {
 }
 .submenu__list {
   display: none;
-  list-style: disc;
-  padding-left: 35px;
+  list-style: circle;
+  padding-left: 38px;
 }
 .submenu__item {
   padding: 10px 5px;
