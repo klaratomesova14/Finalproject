@@ -123,9 +123,6 @@ label .menu__label--close {
         text-transform: uppercase;
         letter-spacing: 1.2px;
 
-        &--last {
-            border-bottom: 0;
-        }
     }
 
     &__link {
@@ -152,6 +149,7 @@ label .menu__label--close {
     &__list {
         width: 55%;
         right: -30px;
+        top: 58px;
     }
 }
 }
@@ -197,8 +195,9 @@ label .menu__label--close {
 
     &__list {
         background-color: colors.$secondary;
+        list-style: none;
         position: absolute;
-        top: 57.5px;
+        top: 58px;
         padding: 15px 15px;
         width: 280px;
         border-radius: 2px;
@@ -208,6 +207,11 @@ label .menu__label--close {
     &__item {
         padding: 15px 15px 10px 10px;
         margin: 0;
+        border-bottom: 1px solid colors.$primary;
+
+        &--last {
+            border-bottom: 0;
+        }
     }
 
     &__link {

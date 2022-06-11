@@ -204,9 +204,6 @@ label .menu__label--close {
   text-transform: uppercase;
   letter-spacing: 1.2px;
 }
-.submenu__item--last {
-  border-bottom: 0;
-}
 .submenu__link {
   display: block;
   text-decoration: none;
@@ -226,6 +223,7 @@ label .menu__label--close {
   .menu__list {
     width: 55%;
     right: -30px;
+    top: 58px;
   }
 }
 @media screen and (min-width: 1150px) {
@@ -258,8 +256,9 @@ label .menu__label--close {
 
   .submenu__list {
     background-color: #ffffff;
+    list-style: none;
     position: absolute;
-    top: 57.5px;
+    top: 58px;
     padding: 15px 15px;
     width: 280px;
     border-radius: 2px;
@@ -268,6 +267,10 @@ label .menu__label--close {
   .submenu__item {
     padding: 15px 15px 10px 10px;
     margin: 0;
+    border-bottom: 1px solid #F6F6F6;
+  }
+  .submenu__item--last {
+    border-bottom: 0;
   }
   .submenu__link:hover {
     color: #b58715;
@@ -890,26 +893,20 @@ label .menu__label--close {
 }
 .footer__subtitle {
   grid-column: 1/2;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   justify-self: right;
   margin: 0;
 }
 .footer__image {
   grid-column: 2/3;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   margin: 0 5px;
   justify-self: left;
 }
 .footer__link {
   display: none;
-  grid-column: 3/4;
-  text-decoration: none;
-  color: #424141;
-  font-size: 12px;
-  font-weight: 300;
-  justify-self: left;
 }
 
 @media screen and (min-width: 500px) {
@@ -922,6 +919,8 @@ label .menu__label--close {
   }
   .footer__title {
     font-size: 22px;
+    padding-left: 20px;
+    letter-spacing: 1.5px;
   }
   .footer__title--mobile {
     display: none;
@@ -933,15 +932,25 @@ label .menu__label--close {
     font-size: 16px;
   }
   .footer__link {
+    display: block;
     font-size: 16px;
+    grid-column: 3/4;
+    text-decoration: none;
+    color: #424141;
+    font-weight: 300;
+    justify-self: left;
   }
   .footer__image {
     width: 35px;
     height: 35px;
     margin: 0 10px;
+    justify-self: center;
   }
 }
 @media screen and (min-width: 1150px) {
+  .footer__bottom {
+    padding-bottom: 40px;
+  }
   .footer__title {
     font-size: 24px;
   }
