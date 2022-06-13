@@ -57,11 +57,12 @@
         line-height: 1.2;
         background-color: colors.$secondary;
         position: absolute;
-        top: 57px;
+        top: 55px;
         right: 0;
         z-index: 1;
         width: 100%;
         border-bottom: 2px solid colors.$primary-darker;
+        border-top: 2px solid colors.$primary-darker;
     }
         
     &__item {
@@ -147,9 +148,9 @@ label .menu__label--close {
 
 .menu {
     &__list {
-        width: 55%;
+        width: 50%;
         right: -30px;
-        top: 58px;
+        top: 55px;
     }
 }
 }
@@ -168,7 +169,7 @@ label .menu__label--close {
         margin: 0;
         padding: 0;
         position: static;
-        border-bottom: none;
+        border: none;
     }
 
     &__item {
@@ -197,11 +198,23 @@ label .menu__label--close {
         background-color: colors.$secondary;
         list-style: none;
         position: absolute;
-        top: 58px;
+        top: 55px;
         padding: 15px 15px;
-        width: 280px;
+        width: 400px;
         border-radius: 2px;
         box-shadow: 1px 1px 1px colors.$primary;
+        border-top: 2px solid colors.$primary;
+        
+        &::before {
+            content: "";
+            background-color: colors.$primary-darker;
+            width: 130px;
+            height: 1.5px;
+            position: absolute;
+            left: 5px;
+            top: -2px;
+
+        }
     }
 
     &__item {

@@ -147,11 +147,12 @@ body {
   line-height: 1.2;
   background-color: #ffffff;
   position: absolute;
-  top: 57px;
+  top: 55px;
   right: 0;
   z-index: 1;
   width: 100%;
   border-bottom: 2px solid #e7e6e6;
+  border-top: 2px solid #e7e6e6;
 }
 .menu__item {
   border-bottom: 1px solid #F6F6F6;
@@ -221,9 +222,9 @@ label .menu__label--close {
 }
 @media screen and (min-width: 750px) {
   .menu__list {
-    width: 55%;
+    width: 50%;
     right: -30px;
-    top: 58px;
+    top: 55px;
   }
 }
 @media screen and (min-width: 1150px) {
@@ -236,7 +237,7 @@ label .menu__label--close {
     margin: 0;
     padding: 0;
     position: static;
-    border-bottom: none;
+    border: none;
   }
   .menu__item {
     border-bottom: none;
@@ -258,11 +259,21 @@ label .menu__label--close {
     background-color: #ffffff;
     list-style: none;
     position: absolute;
-    top: 58px;
+    top: 55px;
     padding: 15px 15px;
-    width: 280px;
+    width: 400px;
     border-radius: 2px;
     box-shadow: 1px 1px 1px #F6F6F6;
+    border-top: 2px solid #F6F6F6;
+  }
+  .submenu__list::before {
+    content: "";
+    background-color: #e7e6e6;
+    width: 130px;
+    height: 1.5px;
+    position: absolute;
+    left: 5px;
+    top: -2px;
   }
   .submenu__item {
     padding: 15px 15px 10px 10px;
