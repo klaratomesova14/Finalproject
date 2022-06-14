@@ -114,22 +114,28 @@ label .menu__label--close {
 
     &__list {
         display: none;
-        list-style: circle;
-        padding-left: 38px;
+        list-style: none;
+        padding-left: 20px;
     }
 
     &__item {
         padding: 10px 5px;
-        font-size: 20px;
+        font-size: 18px;
         text-transform: uppercase;
         letter-spacing: 1.2px;
+    }
 
+    &__icon {
+        width: 25px;
+        height: 25px;
     }
 
     &__link {
-        display: block;
+        display: flex;
+        align-items: center;
         text-decoration: none;
         color: colors.$font;
+        gap: 10px;
     }
 }
 
@@ -148,16 +154,31 @@ label .menu__label--close {
 
 .menu {
     &__list {
-        width: 50%;
+        width: 65%;
         right: -30px;
         top: 55px;
     }
+}
+
+.submenu {
+
+    &__item {
+        font-size: 20px;
+    }
+    
+    &__icon {
+        width: 35px;
+        height: 35px;
+    }
+
 }
 }
 
 @media screen and (min-width: 1150px) {
 
 .menu {
+
+    position: relative;
 
     &__toggler {
         display: none;
@@ -181,13 +202,18 @@ label .menu__label--close {
             margin-right: 0;
         }
 
-        :hover {
+        &:hover {
             color: colors.$complementary;
-            transition: 0.2s linear;
         }
 
         &--active {
             font-weight: 500;
+        }
+    }
+
+    &__link {
+        &:hover {
+            color: colors.$complementary;
         }
     }
 }
@@ -195,52 +221,65 @@ label .menu__label--close {
 .submenu {
 
     &__list {
+        justify-content: space-between;
         background-color: colors.$secondary;
         list-style: none;
         position: absolute;
-        top: 55px;
-        padding: 15px 15px;
-        width: 400px;
-        border-radius: 2px;
-        box-shadow: 1px 1px 1px colors.$primary;
-        border-top: 2px solid colors.$primary;
+        top: 38px;
+        left: 10px;
+        padding: 20px 10px 10px 5px;
+        border-radius: 3px;
+        border: 1px solid colors.$primary-darker;
+        
         
         &::before {
             content: "";
-            background-color: colors.$primary-darker;
-            width: 130px;
-            height: 1.5px;
+            background-color: transparent;
+            width: 0px;
+            height: 0px;
+            border: 12px solid transparent;
+            border-top: 0;
+            border-bottom: 10px solid colors.$primary-darker;
             position: absolute;
-            left: 5px;
-            top: -2px;
+            top: -10px;
+            left: 96.5px;
 
         }
     }
 
     &__item {
-        padding: 15px 15px 10px 10px;
+        padding: 15px 65px;
         margin: 0;
-        border-bottom: 1px solid colors.$primary;
+        font-size: 14px;
+        width: 100px;
+        font-weight: 500;
+        text-align:left;
+    }
 
-        &--last {
-            border-bottom: 0;
-        }
+    &__icon {
+        width: 65px;
+        height: 65px;
     }
 
     &__link {
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
         &:hover {
             color: colors.$complementary;
-            transition: 0.2s linear;
         }
 
         &--active {
-            font-weight: 500;
-        }   
+            text-decoration: underline;
+        }
+ 
     }
 }
 
 .submenu__checkbox:checked ~ .submenu__list {
-    display: block;
+    display: flex;
 }
 }
