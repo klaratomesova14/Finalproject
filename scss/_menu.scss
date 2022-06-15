@@ -128,6 +128,7 @@ label .menu__label--close {
     &__icon {
         width: 25px;
         height: 25px;
+        border-radius: 50%;
     }
 
     &__link {
@@ -221,16 +222,14 @@ label .menu__label--close {
 .submenu {
 
     &__list {
-        justify-content: space-between;
         background-color: colors.$secondary;
         list-style: none;
         position: absolute;
         top: 38px;
         left: 10px;
-        padding: 20px 10px 10px 5px;
-        border-radius: 3px;
-        border: 1px solid colors.$primary-darker;
-        
+        padding: 20px 10px 20px 5px;
+        border-radius: 2px;
+        border: 2px solid colors.$primary-darker;
         
         &::before {
             content: "";
@@ -242,23 +241,23 @@ label .menu__label--close {
             border-bottom: 10px solid colors.$primary-darker;
             position: absolute;
             top: -10px;
-            left: 96.5px;
+            left: 93.5px;
 
         }
     }
 
     &__item {
-        padding: 15px 65px;
+        padding: 0 58px;
         margin: 0;
-        font-size: 14px;
+        font-size: 12px;
         width: 100px;
         font-weight: 500;
         text-align:left;
     }
 
     &__icon {
-        width: 65px;
-        height: 65px;
+        width: 55px;
+        height: 55px;
     }
 
     &__link {
@@ -266,7 +265,7 @@ label .menu__label--close {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 10px;
 
         &:hover {
             color: colors.$complementary;

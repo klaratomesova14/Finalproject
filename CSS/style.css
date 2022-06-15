@@ -208,6 +208,7 @@ label .menu__label--close {
 .submenu__icon {
   width: 25px;
   height: 25px;
+  border-radius: 50%;
 }
 .submenu__link {
   display: flex;
@@ -275,15 +276,14 @@ label .menu__label--close {
   }
 
   .submenu__list {
-    justify-content: space-between;
     background-color: #ffffff;
     list-style: none;
     position: absolute;
     top: 38px;
     left: 10px;
-    padding: 20px 10px 10px 5px;
-    border-radius: 3px;
-    border: 1px solid #e7e6e6;
+    padding: 20px 10px 20px 5px;
+    border-radius: 2px;
+    border: 2px solid #e7e6e6;
   }
   .submenu__list::before {
     content: "";
@@ -295,25 +295,25 @@ label .menu__label--close {
     border-bottom: 10px solid #e7e6e6;
     position: absolute;
     top: -10px;
-    left: 96.5px;
+    left: 93.5px;
   }
   .submenu__item {
-    padding: 15px 65px;
+    padding: 0 58px;
     margin: 0;
-    font-size: 14px;
+    font-size: 12px;
     width: 100px;
     font-weight: 500;
     text-align: left;
   }
   .submenu__icon {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
   }
   .submenu__link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
   }
   .submenu__link:hover {
     color: #b58715;
