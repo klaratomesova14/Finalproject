@@ -226,13 +226,16 @@ label .menu__label--close {
 .submenu {
 
     &__list {
-        background-color: #291818ad;
+        background-color: white;
         list-style: none;
         position: absolute;
-        top: 36px;
+        top: 34px;
         left: 10px;
-        padding: 30px 15px 30px 10px;
-        border-radius: 3px;
+        padding: 30px 15px 25px 10px;
+        border-radius: 5px;
+        border: 1px solid colors.$primary-darker;
+        border-top: 2px solid colors.$primary-darker;
+        border-left: 2px solid colors.$primary-darker;
         
         &::before {
             content: "";
@@ -241,10 +244,10 @@ label .menu__label--close {
             height: 0px;
             border: 10px solid transparent;
             border-top: 0;
-            border-bottom: 8px solid #291818ad;
+            border-bottom: 8px solid colors.$primary-darker;
             position: absolute;
             top: -8px;
-            left: 97px;
+            left: 95px;
         }
     }
 
@@ -253,7 +256,7 @@ label .menu__label--close {
         margin: 0;
         font-size: 12px;
         width: 100px;
-        font-weight: 500;
+        font-weight: 600;
         text-align: left;
     }
 
@@ -265,13 +268,12 @@ label .menu__label--close {
         box-sizing: content-box;
         display: block;
         border-radius: 50%;
-        width: 80px;
-        height: 80px;
+        width: 85px;
+        height: 85px;
         object-fit: cover;
-        border: 1px solid colors.$primary;
 
         &:hover {
-            border: 2px solid white;
+            transform: scale(1.05);
         }
     }
 
@@ -281,11 +283,10 @@ label .menu__label--close {
         flex-direction: column;
         align-items: center;
         justify-items: flex-end;
-        color: white;
-        gap: 10px;
+        gap: 5px;
 
         &:hover {
-            font-weight: 500;
+            color: colors.$complementary;
         }
 
         &--active {
