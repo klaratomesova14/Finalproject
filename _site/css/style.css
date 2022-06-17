@@ -205,6 +205,9 @@ label .menu__label--close {
   text-transform: uppercase;
   letter-spacing: 1.2px;
 }
+.submenu__image {
+  display: none;
+}
 .submenu__icon {
   width: 25px;
   height: 25px;
@@ -276,26 +279,25 @@ label .menu__label--close {
   }
 
   .submenu__list {
-    background-color: #ffffff;
+    background-color: rgba(41, 24, 24, 0.6784313725);
     list-style: none;
     position: absolute;
-    top: 38px;
+    top: 36px;
     left: 10px;
-    padding: 20px 10px 20px 5px;
-    border-radius: 2px;
-    border: 2px solid #e7e6e6;
+    padding: 30px 15px 30px 10px;
+    border-radius: 3px;
   }
   .submenu__list::before {
     content: "";
     background-color: transparent;
     width: 0px;
     height: 0px;
-    border: 12px solid transparent;
+    border: 10px solid transparent;
     border-top: 0;
-    border-bottom: 10px solid #e7e6e6;
+    border-bottom: 8px solid rgba(41, 24, 24, 0.6784313725);
     position: absolute;
-    top: -10px;
-    left: 93.5px;
+    top: -8px;
+    left: 97px;
   }
   .submenu__item {
     padding: 0 58px;
@@ -306,17 +308,31 @@ label .menu__label--close {
     text-align: left;
   }
   .submenu__icon {
-    width: 55px;
-    height: 55px;
+    display: none;
+  }
+  .submenu__image {
+    box-sizing: content-box;
+    display: block;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: 1px solid #F6F6F6;
+  }
+  .submenu__image:hover {
+    border: 2px solid white;
   }
   .submenu__link {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: flex-end;
+    color: white;
     gap: 10px;
   }
   .submenu__link:hover {
-    color: #b58715;
+    font-weight: 500;
   }
   .submenu__link--active {
     text-decoration: underline;
@@ -843,7 +859,7 @@ label .menu__label--close {
 .gallery__label {
   width: 70px;
   height: 70px;
-  background-color: #e7e6e6;
+  background-color: #898585;
   border-radius: 50%;
   position: absolute;
   left: 10px;
@@ -851,9 +867,10 @@ label .menu__label--close {
 }
 .gallery__title {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
   line-height: 25px;
+  color: white;
 }
 
 @media screen and (min-width: 500px) {
