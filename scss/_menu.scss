@@ -208,7 +208,7 @@ label .menu__label--close {
         }
 
         &:hover {
-            color: colors.$complementary;
+            color: colors.$complementary-darker;
         }
 
         &--active {
@@ -218,7 +218,7 @@ label .menu__label--close {
 
     &__link {
         &:hover {
-            color: colors.$complementary;
+            color: colors.$complementary-darker;
         }
     }
 }
@@ -226,16 +226,16 @@ label .menu__label--close {
 .submenu {
 
     &__list {
-        background-color: white;
+        background-color: #ffffffe6;
         list-style: none;
         position: absolute;
-        top: 34px;
+        top: 36px;
         left: 10px;
-        padding: 30px 15px 25px 10px;
+        padding: 0;
         border-radius: 5px;
-        border: 1px solid colors.$primary-darker;
-        border-top: 2px solid colors.$primary-darker;
-        border-left: 2px solid colors.$primary-darker;
+        border: 1px solid colors.$primary;
+        border-top: 1px solid colors.$primary-darker;
+        border-left: 1px solid colors.$primary-darker;
         
         &::before {
             content: "";
@@ -244,20 +244,23 @@ label .menu__label--close {
             height: 0px;
             border: 10px solid transparent;
             border-top: 0;
-            border-bottom: 8px solid colors.$primary-darker;
+            border-bottom: 8px solid #e8e6e6e6;
             position: absolute;
             top: -8px;
-            left: 95px;
+            left: 97.5px;
         }
     }
 
     &__item {
-        padding: 0 58px;
-        margin: 0;
+        padding: 20px 60px 15px 60px;
         font-size: 12px;
         width: 100px;
         font-weight: 600;
         text-align: left;
+
+        &:hover {
+            background-color: colors.$complementary;
+        }
     }
 
     &__icon {
@@ -271,9 +274,11 @@ label .menu__label--close {
         width: 85px;
         height: 85px;
         object-fit: cover;
+        padding: 2px;
+        background-color: colors.$complementary-lighter;
 
         &:hover {
-            transform: scale(1.05);
+            background-color: white;
         }
     }
 
@@ -285,14 +290,9 @@ label .menu__label--close {
         justify-items: flex-end;
         gap: 5px;
 
-        &:hover {
-            color: colors.$complementary;
-        }
-
         &--active {
             text-decoration: underline;
         }
- 
     }
 }
 
@@ -300,3 +300,4 @@ label .menu__label--close {
     display: flex;
 }
 }
+

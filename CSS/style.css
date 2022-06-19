@@ -269,26 +269,26 @@ label .menu__label--close {
     margin-right: 0;
   }
   .menu__item:hover {
-    color: #b58715;
+    color: #edcb76;
   }
   .menu__item--active {
     font-weight: 500;
   }
   .menu__link:hover {
-    color: #b58715;
+    color: #edcb76;
   }
 
   .submenu__list {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9019607843);
     list-style: none;
     position: absolute;
-    top: 34px;
+    top: 36px;
     left: 10px;
-    padding: 30px 15px 25px 10px;
+    padding: 0;
     border-radius: 5px;
-    border: 1px solid #e7e6e6;
-    border-top: 2px solid #e7e6e6;
-    border-left: 2px solid #e7e6e6;
+    border: 1px solid #F6F6F6;
+    border-top: 1px solid #e7e6e6;
+    border-left: 1px solid #e7e6e6;
   }
   .submenu__list::before {
     content: "";
@@ -297,18 +297,20 @@ label .menu__label--close {
     height: 0px;
     border: 10px solid transparent;
     border-top: 0;
-    border-bottom: 8px solid #e7e6e6;
+    border-bottom: 8px solid rgba(232, 230, 230, 0.9019607843);
     position: absolute;
     top: -8px;
-    left: 95px;
+    left: 97.5px;
   }
   .submenu__item {
-    padding: 0 58px;
-    margin: 0;
+    padding: 20px 60px 15px 60px;
     font-size: 12px;
     width: 100px;
     font-weight: 600;
     text-align: left;
+  }
+  .submenu__item:hover {
+    background-color: rgba(237, 203, 118, 0.5960784314);
   }
   .submenu__icon {
     display: none;
@@ -321,9 +323,11 @@ label .menu__label--close {
     height: 85px;
     -o-object-fit: cover;
        object-fit: cover;
+    padding: 2px;
+    background-color: rgba(237, 203, 118, 0.2980392157);
   }
   .submenu__image:hover {
-    transform: scale(1.05);
+    background-color: white;
   }
   .submenu__link {
     display: flex;
@@ -331,9 +335,6 @@ label .menu__label--close {
     align-items: center;
     justify-items: flex-end;
     gap: 5px;
-  }
-  .submenu__link:hover {
-    color: #b58715;
   }
   .submenu__link--active {
     text-decoration: underline;
@@ -469,8 +470,8 @@ label .menu__label--close {
 .button {
   border-radius: 25px;
   padding: 10px 15px;
-  background-color: #EDCC76;
-  border: 1px solid #EDCC76;
+  background-color: #edcb76;
+  border: 1px solid #edcb76;
   font-weight: 300;
   color: #424141;
   font-size: 16px;
