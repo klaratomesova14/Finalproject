@@ -249,6 +249,19 @@ label .menu__label--close {
             top: -8px;
             left: 97.5px;
         }
+
+        &::after {
+            content: "";
+            background-color: transparent;
+            width: 0px;
+            height: 0px;
+            border: 8.5px solid transparent;
+            border-top: 0;
+            border-bottom: 5px solid #ffffffe6;
+            position: absolute;
+            top: -5.25px;
+            left: 99px;
+        }
     }
 
     &__item {
